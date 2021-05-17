@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Home page</title>
@@ -22,10 +21,10 @@
 
 <div class="row">
   <div class="side">
-    <h2>About Me</h2>
-    <h5>Photo of me:</h5>
+    <h2>About FKIS</h2>
+    <h5>Photo:</h5>
     <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <p>Some text</p>
     <h3>More Text</h3>
     <p>some text.</p>
     <div class="fakeimg" style="height:60px;">Image</div>
