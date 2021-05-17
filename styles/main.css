@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    text-align: center;
+    font-size: 5vh;
+    background-color: maroon;
+    color: white;
+    padding: 2.5vh;
+    margin-bottom: 3vh;
+}
+#loginPanel{
+    text-align: center;
+}
