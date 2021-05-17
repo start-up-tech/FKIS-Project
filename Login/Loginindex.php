@@ -3,8 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title> Login Page </title>
- <link rel="stylesheet" href="logincss.css">
-</head> 
+ <link rel="stylesheet" href="logincss.css"></head>
 <body>  
     <center> <h1> FKIS SYSTEM </h1>  <!--search how to add login using facebook(api)-->
     <form>
@@ -18,6 +17,5 @@
             <button type="button" class="cancelbtn"> Cancel</button> 
             <a href="recovery.php"> Forgot password? </a> 
          
-    </form></center>   
-</body>   
-</html>
+     </form></center>
+ </body></html>
