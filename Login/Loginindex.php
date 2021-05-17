@@ -5,7 +5,6 @@
 <title> Login Page </title>
  <link rel="stylesheet" href="logincss.css">
 </head> 
- 
 <body>  
     <center> <h1> FKIS SYSTEM </h1>  <!--search how to add login using facebook(api)-->
     <form>
