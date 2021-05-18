@@ -11,7 +11,7 @@
     <nav>FKIS</nav>
     <ul>
         <li> <a href="./ApproveBooking/ApproveBooking.html">Approve Booking</a> </li>
-        <li> <a href="./GenerateReport/DisplayReport.php">Generate Report</a> </li>
+        <li> <a href="./GenerateReport/GenerateReport.php">Generate Report</a> </li>
         <li> <a href="./Inform New Order/view.php">New Order</a> </li>
         <li> <a href="./Login/Loginindex.php">Login</a> </li>
         <li> <a href="./RoutineAudit/">Routine Audit</a> </li>
