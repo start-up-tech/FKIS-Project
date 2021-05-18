@@ -1,7 +1,20 @@
 <?php
-require_once $_SERVER["DOCUMENT_ROOT"] . '/Project/Inform New Order/OrderController.php';
+ $servername = "localhost";
+ $username = "root";
+ $password = "";
+ $dbname = "fkisdb";
+ 
+ $con = mysqli_connect($servername, $username, $password, $dbname);
 
-$order = new OrderController();
+ if(mysqli_connect_errno()){
+     echo "Failed to connect to database";
+     exit();
+ }
+ echo "Connection Success";
+ 
+//require_once $_SERVER["DOCUMENT_ROOT"] . '/Project/InformNewOrder/OrderController.php';
+
+//$order = new OrderController();
 
 // confirmOrder 
 if (isset($_POST['confirm'])) {
@@ -18,8 +31,10 @@ if (isset($_POST['delete'])) {
         <style>
 
         </style>
+        <link rel="stylesheet" href="../styles/main.css">
     </head>
     <body>
+    <nav>FKIS</nav>
         <div class="container center content">
             <h3>NEW ORDERS</h3>
             <div class="table-responsive-lg">
@@ -29,27 +44,22 @@ if (isset($_POST['delete'])) {
                             <th>Order ID</th>
                             <th>Admin ID</th>
                             <th>Item Code</th>
-                            <th>Item Name</th>
-                            <th>Order Quantity</th>
-                            <th>Item Price (RM)</th>
-                            <th>Total Price (RM)</th>
+                            <th>Item Quantity (RM)</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         
-                        <?php foreach ($data as $row) {?>
-                        <tr>
-                        <td><?=$row['order_id']?></td>
-                        <td><?=$row['admin_id']?></td>
-                        <td><?=$row['item_code']?></td>
-                        <td><?=$row['item_name']?></td>
-                        <td><?=$row['order_qty']?></td>
-                        <td><?=$row['item_price']?></td>
-                        <td><?=$row['order_totalPrice']?></td>
-                        </tr>
-                            <?php
-                            }
-                            ?>
+                        <?php foreach ($data as $row) {
+                        /*print '<tr><td><?=$row['Order_ID']?></td><td><?=$row['Admin_ID']?></td><td><?=$row['Item_Code']?></td><td><?=$row['Item_Quantity']?></td></tr>'; */
+                        print '<tr><td>' .$row['Order_ID']. '</td><td>' .$row['Admin_ID']. '</td><td>' .$row['Item_Code']. '</td><td>' .$row['Item_Quantity']. '</td></tr>';     
+                    }
+                        ?>
                     </tbody>
                 </table>
             </div>
