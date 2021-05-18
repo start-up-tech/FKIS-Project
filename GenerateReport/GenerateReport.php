@@ -26,7 +26,7 @@
 
     <center>
     <nav>GENERATE REPORT</nav><br>
-    <form action="DisplayReport.php" method="get">
+    <form action="ReportController.php" method="get">
      Report ID: <input type="text" name="Report_ID"><br><br>
      Report Date: <input type="date" name="Report_Date"><br><br>
      Approval Booking: <input type="radio" id="Approve" name="Approval_Booking" value="Approve"><label for="Approve">Approve</label>
