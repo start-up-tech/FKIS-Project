@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
-    <nav><?php include '../styles/Sidebar.php'?>FKIS</nav>
+<nav><?php include '../styles/Sidebar.php'?>FKIS</nav>
   <center>
     <h1><b>Inform New Order</b></h1>
          <div>
