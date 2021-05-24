@@ -42,7 +42,7 @@
             $searchq = $_POST['search'];
             //$searchq = preg_replace
 
-            $query = mysqli_query($con, "SELECT * FROM routineaudit WHERE (`Audit_ID` LIKE '%$searchq%')") or die("No Search");
+            $query = mysqli_query($con, "SELECT * FROM routine_audit WHERE (`Audit_ID` LIKE '%$searchq%')") or die("No Search");
             $count = mysqli_num_rows($query);
             if($count == 0){
                 $output = 'No search result';
