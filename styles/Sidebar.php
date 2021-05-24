@@ -51,8 +51,8 @@ body {
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="http://localhost/FKIS-Project-main/Login/Loginindex.php">Login</a>
-  <a href="http://localhost/FKIS-Project-main/Inform%20New%20Order/view.php">Inform New Order</a>
+  <a href="http://localhost/FKIS-Project-main/Login/Loginindex.html">Login</a>
+  <a href="http://localhost/FKIS-Project-main/InformNewOrder/view.php">Inform New Order</a>
   <a href="http://localhost/FKIS-Project-main/RoutineAudit/">Routine Audit</a>
   <a href="http://localhost/FKIS-Project-main/GenerateReport/GenerateReport.php">Generate Report</a>
 </div>
