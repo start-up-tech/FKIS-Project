@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-<img src="styles/top.png" width="1400" height="200" title="top" alt="top" />
-   <nav><?php include 'styles/Sidebar.php'?>FK Inventory System</nav>
-
+   <nav><?php include 'styles/Sidebar.php'?>FK Inventory System</nav><br>
+   <center>
+   <img src="styles/welcome.jpg" width="700" height="300" title="welcome" alt="welcome" />
+   </center>
 </body>
 </html>
