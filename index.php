@@ -10,10 +10,10 @@
 <body>
     <nav>FKIS</nav>
     <ul>
-        <li> <a href="./ApproveBooking/ApproveBooking.html">Approve Booking</a> </li>
+        <li> <a href="./ApproveBooking/Approvebooking(view).html">Approve Booking</a> </li>
         <li> <a href="./GenerateReport/GenerateReport.php">Generate Report</a> </li>
         <li> <a href="./InformNewOrder/view.php">New Order</a> </li>
-        <li> <a href="./Login/Loginindex.php">Login</a> </li>
+        <li> <a href="./Login/Loginindex.html">Login</a> </li>
         <li> <a href="./RoutineAudit/">Routine Audit</a> </li>
        
     </ul>
