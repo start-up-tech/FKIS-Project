@@ -5,11 +5,9 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/Project/Inform New Order/OrderModel.p
 class OrderController{
     function addOrder(){
         $order = new OrderModel();
-        $order->customer_id = $_POST['inputAdminId'];
+        $order->Admin_ID = $_POST['inputAdminId'];
 		$order->serviceprovider_id = $_POST['inputTreasurerId'];
         $order->item_id = $_POST['inputItemCode'];
-        $order->item_name = $_POST['inputItemName'];
-        $order->order_qty = $_POST['inputOrderQty'];
         $order->item_price = $_POST['inputItemPrice'];
         $order->order_totalPrice = $_POST['inputOrderTotalPrice'];
     }
