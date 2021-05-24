@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+table {
+border-collapse: collapse;
+width: 100%;
+color: #588c7e;
+font-family: monospace;
+font-size: 25px;
+text-align: left;
+}
+th {
+background-color: #588c7e;
+color: white;
+}
+tr:nth-child(even) {background-color: #f2f2f2}
+</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="testCSS (Good Collection).css">
+    <script type="text/javascript" src="testJS (Good Collection).js"></script>
+    <title> Approve Booking </title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Universiti_Malaysia_Pahang.svg/1920px-Universiti_Malaysia_Pahang.svg.png" alt="UMP Logo" width="220" height="100">
+      </div>
+      <div class="date" id="currDateTime"> </div>
+      <h2 style="text-align: center;"> Booking List </h2>
+    </div>
+      <div class="sidemenu">
+        <h1 style="padding: 6px 6px 6px 32px;"> Menu </h1>
+        <a href="#">Register</a>
+        <a href="#">Order</a>
+        <a href="#">Report</a>
+		<a href="#">Routine Audit</a>
+		<a href="#">Booking</a></div>
+      <div class="header2">
+        <p> Select to approve request</p>
+      </div>
+      <div class="main">
+        <h2><table>
+<tr>
+<th>Staff Id</th>
+<th>Item</th>
+<th>Quantity</th>
+<th></th>
+</tr>
+ <form action="/action_page.php">
+  <input type="checkbox" id="approval" name="approval" value="">
+  <label for="approval"> </label><br><br>
+</form> <input type="submit" value="Approve">
+<?php
+$conn = mysqli_connect("localhost", "root", "", "fkisdb");
+// Check connection
+if ($conn->connect_error) {
+die("Connection failed: " . $conn->connect_error);
+}
+$sql = "SELECT Staff_ID,Item_Code , Item_Quantity FROM booking";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+// output data of each row
+while($row = $result->fetch_assoc()) {
+echo "<tr><td>" . $row["Staff_ID"]. "</td><td>" . $row["Item_Code"] . "</td><td>"
+. $row["Item_Quantity"]. "</td></tr>";
+}
+echo "</table>";
+} else { echo "0 results"; }
+$conn->close();
+?>
+</table> </h2>
+      </div>
+	  </body>
+	  </html>
