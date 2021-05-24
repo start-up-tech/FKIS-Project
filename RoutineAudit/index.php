@@ -21,14 +21,14 @@
             echo "Failed to connect to database";
             exit();
         }
-        echo "Connection Success"
+
         
         //Let's just say below is a forbidden move
         //mysql_connect($servername, $username, $password) or die("Error connecting to database: ".mysql_error());
 	    //mysql_select_db("fkisdb") or die(mysql_error()); 
     ?>
 
-    <nav>FKIS</nav>
+    <nav><?php include '../styles/Sidebar.php'?>FKIS</nav>
     <div id="loginPanel">
         <form action="index.php" method="POST">
             <input type="text" name="search" id="" placeholder="Audit ID">
