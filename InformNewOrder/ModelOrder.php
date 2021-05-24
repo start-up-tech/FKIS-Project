@@ -1,44 +1,50 @@
 <?php
-require_once $_SERVER["DOCUMENT_ROOT"] . '/Project/Inform New Order/database.php';
+    $link = mysqli_connect("localhost", "root", "") or die(mysqli_connect_error());
+    mysqli_select_db($link, "fkisdb") or die(mysqli_error($link));
+    $display = "SELECT * FROM `new_order`";
+    $rs_display = mysqli_query($link, $display) or die(mysqli_error($link));
+?>
 
-class OrderModel{
-    public $order_id, $admin_id, $treasurer_id, $item_id, $item_name, $order_qty, $item_price, $order_totalPrice , $order_status;
-
-    function addOrder(){
-        $sql = "insert into `order`(admin_id,treasurer_id,item_id,item_name,order_qty,item_price,order_totalPrice,order_status) values(:admin_id,:treasurer_id_id,:item_id,:item_name,:order_qty,:item_price,:order_totalPrice,:order_status)";
-        $args = [':admin_id' => $this->admin_id, ':treasurer_id' => $this->treasurer_id, ':item_id' => $this->item_id, ':item_name' => $this->item_name, ':order_qty' => $this->order_qty, ':item_price' => $this->item_price,':order_totalPrice'=>$this->order_totalPrice, ':order_status' => $this->order_status];
-        $stmt = DB::run($sql, $args);
-        $count = $stmt->rowCount();
-        $sql_orderid = "SELECT LAST_INSERT_ID()";
-        $fetch_orderid = DB::run($sql_orderid);
-        $_SESSION['payment_orderid'] = $fetch_orderid->fetchColumn();
-        return $count;
-    }
-
-    function viewOrder(){
-        $sql = "select * from `order` where treasurer_id=:treasurer_id";
-        $args = [':treasurer_id' => $this->treasurer_id];
-        return DB::run($sql, $args);
-    }
-
-    function confirmOrder(){
-        $sql = "update `order` set order_status=:order_status where order_id=:order_id";
-        $args = [':order_status' => $this->order_status, ':order_id' => $this->order_id];
-        $stmt = DB::run($sql, $args);
-        $count = $stmt->rowCount();
-        return $count;
-    }
-
-    function deleteOrder(){
-        $sql = "delete from `order` where order_id=:order_id";
-        $args = [':order_id' => $this->order_id];
-        return DB::run($sql, $args);
-    }
-
-    function customerViewAllOrder(){
-        $sql = "select * from `order` where admin_id=:admin_id";
-        $args = [':admin_id' => $this->admin_id];
-        return DB::run($sql, $args);
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <nav><?php include 'sidebar.php'?>FKIS</nav>
+  <center>
+    <h1><b>Report List</b></h1>
+        <table style="border: 3px solid maroon;margin:10px;padding:50px; width:60%;">
+            <thead>
+                <th colspan="5">Order ID</th>
+                <th colspan="5">Admin ID</th>
+                <th colspan="5">Item Code</th>
+                <th colspan="5">Item Quantity</th>
+            </thead>
+            <tbody>
+                <?php
+                    while ($row=mysqli_fetch_array($rs_display)){
+                ?>
+     
+                    <tr style="text-align:center";>
+                        <td colspan="5"><?php echo $row['Order_ID']?></td>
+                        <td colspan="5"><?php echo $row['Admin_ID']?></td>
+                        <td colspan="5"><?php echo $row['Item_Code']?></td>
+                        <td colspan="5"><?php echo $row['Item_Quantity']?></td>
+                    </tr>
+                <?php
+                    }
+                ?>
+            </tbody>
+        </table>
+        <br>
+    </center>
+</body>
+</html>
+<?php
+    mysqli_close($link);
 ?>
