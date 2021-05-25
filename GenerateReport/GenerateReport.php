@@ -23,13 +23,8 @@
                         <td colspan="5"><input type="date" name="Report_Date"/></td>
                     </tr>
                     <tr>
-                        <td><label for="Approved_Booking">Approval Booking:</label></td>
-                        <td colspan="5">
-                            <input type="radio" id="Approve" name="Approved_Booking" value="Approve">
-                            <label for="Approve">Approve</label>
-                            <input type="radio" id="Reject" name="Approved_Booking" value="Reject">
-                            <label for="Reject">Reject</label>
-                        </td>
+                        <td><label for="Approved_Booking">Approved Booking:</label></td>
+                        <td colspan="5"><input type="text" name="Approved_Booking"/></td>
                     </tr>
                     <tr>
                         <td><label for="Audit_ID">Audit ID:</label></td>
