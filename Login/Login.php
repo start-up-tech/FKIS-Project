@@ -28,7 +28,7 @@
             <button type="submit" >Login</button>             
             <button type="button" class="cancelbtn"> Cancel</button> <br>
 			<input type="checkbox" checked="checked"> Remember me 
-            <a href=""> Forgot password? </a> 
+            <a href="recovery.php"> Forgot password? </a> 
 						 
          
      </form></center>
