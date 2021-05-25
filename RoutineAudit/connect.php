@@ -2,7 +2,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "fkisdbb";
+    $dbname = "fkisdb";
     /*
     fskdb  - darwish local(darwish)
     fskdbb - darwish local(safwan)

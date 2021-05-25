@@ -8,7 +8,7 @@
   <body>
     <div class="header">
       <div class="title" id="title"> </div>
-      <h1 style="text-align: center;"> Make a booking</h1>
+      <h1 style="text-align: center;"><?php include '../styles/Sidebar.php'?> Make a booking</h1>
     </div>
          <h2>BOOKING</h2>
        <div class="detail">
