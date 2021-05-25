@@ -36,7 +36,6 @@
         </form>
 
     <?php include 'connect.php';?>
-    <nav><?php include '../styles/Sidebar.php';?>FKIS</nav>
     <div> 
         <button onclick="openDiv(theID = 'panelSearch')">Search</button>
         <button onclick="openDiv(theID = 'newAudit')">New</button>
@@ -91,17 +90,6 @@
                 $searchq = $_POST['search'];
                 //$searchq = preg_replace
                 
-                $query = mysqli_query($con, "SELECT * FROM routine_audit WHERE (`Audit_ID` LIKE '%$searchq%')") or die("No Search");
-                $count = mysqli_num_rows($query);
-                if($count == 0){
-                    $output = 'No search result';
-                }else{
-                    while($row = mysqli_fetch_array($query)){
-                        $auditid = $row['Audit_ID'];
-                        $adminid = $row['Admin_ID'];
-                        $itemcode = $row['Item_Code'];
-                        $ItemQty = $row['Item_Quantity'];
-
             $query = mysqli_query($con, "SELECT * FROM routine_audit WHERE (`Audit_ID` LIKE '%$searchq%')") or die("No Search");
             $count = mysqli_num_rows($query);
             if($count == 0){
