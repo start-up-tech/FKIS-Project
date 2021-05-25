@@ -21,5 +21,3 @@
     }
     
 ?>
-<br/><br/>
-<a href="home.php">Back</a>

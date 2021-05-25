@@ -21,14 +21,14 @@
             echo "Failed to connect to database";
             exit();
         }
-        echo "Connection Success"
+
         
         //Let's just say below is a forbidden move
         //mysql_connect($servername, $username, $password) or die("Error connecting to database: ".mysql_error());
 	    //mysql_select_db("fkisdb") or die(mysql_error()); 
     ?>
 
-    <nav>FKIS</nav>
+    <nav><?php include '../styles/Sidebar.php'?>FKIS</nav>
     <div id="loginPanel">
         <form action="index.php" method="POST">
             <input type="text" name="search" id="" placeholder="Audit ID">
@@ -42,7 +42,7 @@
             $searchq = $_POST['search'];
             //$searchq = preg_replace
 
-            $query = mysqli_query($con, "SELECT * FROM routineaudit WHERE (`Audit_ID` LIKE '%$searchq%')") or die("No Search");
+            $query = mysqli_query($con, "SELECT * FROM routine_audit WHERE (`Audit_ID` LIKE '%$searchq%')") or die("No Search");
             $count = mysqli_num_rows($query);
             if($count == 0){
                 $output = 'No search result';

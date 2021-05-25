@@ -1,7 +1,7 @@
 <?php
     $link = mysqli_connect("localhost", "root", "") or die(mysqli_connect_error());
     mysqli_select_db($link, "fkisdb") or die(mysqli_error($link));
-    $display = "SELECT * FROM `report`";
+    $display = "SELECT * FROM `booking`";
     $rs_display = mysqli_query($link, $display) or die(mysqli_error($link));
 ?>
 
@@ -11,20 +11,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Report List</title>
+    <title>Booking</title>
     <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
-    <nav><?php include '../styles/Sidebar.php'?>FKIS</nav>
+<nav><?php include '../styles/Sidebar.php'?>FKIS</nav>
   <center>
-    <h1><b>Report List</b></h1>
+    <h1><b>Booking List</b></h1>
         <table style="border: 3px solid maroon;margin:10px;padding:50px; width:60%;">
             <thead>
-                <th colspan="5">Report ID</th>
-                <th colspan="5">Report Date</th>
-                <th colspan="5">Approval Booking</th>
-                <th colspan="5">Audit ID</th>
-                <th colspan="5">Order ID</th>
+                <th colspan="5">Booking ID</th>
+                <th colspan="5">Staff ID</th>
+                <th colspan="5">Item Code</th>
+                <th colspan="5">Item Quantity</th>
             </thead>
             <tbody>
                 <?php
@@ -32,11 +31,10 @@
                 ?>
      
                     <tr style="text-align:center";>
-                        <td colspan="5"><?php echo $row['Report_ID']?></td>
-                        <td colspan="5"><?php echo $row['Report_Date']?></td>
-                        <td colspan="5"><?php echo $row['Approved_Booking']?></td>
-                        <td colspan="5"><?php echo $row['Audit_ID']?></td>
-                        <td colspan="5"><?php echo $row['Order_ID']?></td>
+                        <td colspan="5"><?php echo $row['Booking_ID']?></td>
+                        <td colspan="5"><?php echo $row['Staff_ID']?></td>
+                        <td colspan="5"><?php echo $row['Item_Code']?></td>
+                        <td colspan="5"><?php echo $row['Item_Quantity']?></td>
                     </tr>
                 <?php
                     }
