@@ -11,6 +11,6 @@ nav{
     padding: 2.5vh;
     margin-bottom: 3vh;
 }
-#contentPanel {
-    text-align: center;
+input{
+    margin: 10px 5px 0px 5px;
 }
