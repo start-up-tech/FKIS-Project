@@ -1,0 +1,47 @@
+<?php
+    $query = $_POST['query'];
+    $min_length = 3; //minimum length(optional)
+    
+    if(strlen($query) >= $min_length){
+      //$query = htmlspecialchars($query);//change to html equivalents
+      //$query = mysql_real_escape_string($query);//no SQL injection
+      $raw_results = mysqli_query("SELECT * FROM fkisdb where (`Audit_ID` '%".$query."%')") or die(mysql_error);
+
+        if(mysql_num_rows($raw_results) > 0){ // if one or more rows are returned do following
+			
+			    while($results = mysql_fetch_array($raw_results)){
+			    // $results = mysql_fetch_array($raw_results) puts data from database into array, while it's valid it does the loop
+			
+				  echo "<p><h3>".$results['Audit_ID']."</h3>".$results['Admin_ID']."</p>";
+				  // posts results gotten from database(title and text) you can also show id ($results['id'])
+			  }
+			
+		}
+		else{ // if there is no matching rows do following
+			echo "No results";
+		}
+    }
+    else{ // if query length is less than minimum
+		echo "Minimum length is ".$min_length;
+	}
+?>
+2nd test
+$output;
+        echo $_POST['search'];
+        if(isset($_POST['search'])){
+            $searchq = $_POST['search'];
+            //$searchq = preg_replace
+
+            $query = mysqli_query($con, "SELECT * FROM fkisdb WHERE (`Audit_ID` LIKE '%$searchq%')") or die("No Search");
+            $count = mysql_num_rows($query);
+            if($count == 0){
+                $output = 'No search result';
+            }else{
+                while($row = mysql_fetch_array($query)){
+                    $auditid = $row['Audit_ID'];
+                    $output .= '<div>' .$auditid. '<div>';
+                }
+            }
+        }
+        echo $_POST['search'];
+        print("$output");
