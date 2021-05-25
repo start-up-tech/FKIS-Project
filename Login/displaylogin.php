@@ -9,7 +9,7 @@
 <body bgcolor="#FFFFFF" text="#000000">
 <nav>FKIS SYSTEM</nav>
 
-<center><h3>FKIS SYSTEM USER LIST</h3>
+<center><h3>FKIS SYSTEM ADMIN PAGE</h3>
 <?php
 include("control.php");
 
