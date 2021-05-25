@@ -22,7 +22,7 @@
             <thead>
                 <th colspan="5">Report ID</th>
                 <th colspan="5">Report Date</th>
-                <th colspan="5">Approval Booking</th>
+                <th colspan="5">Approved Booking</th>
                 <th colspan="5">Audit ID</th>
                 <th colspan="5">Order ID</th>
             </thead>

@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-<<<<<<< HEAD
-<<<<<<< HEAD
     <nav>FKIS</nav>
     <ul>
         <li> <a href="./ApproveBooking/Approvebooking(view).html">Approve Booking</a> </li>
@@ -20,16 +18,9 @@
         <li> <a href="./Requestbooking/requestbooking.html">Request Booking</a> </li>
        
     </ul>
-=======
-=======
->>>>>>> ecca6e9f9dc278d36fa2a847f578f7f713f966e4
    <nav><?php include 'styles/Sidebar.php'?>FK Inventory System</nav><br>
    <center>
    <img src="styles/welcome.jpg" width="700" height="300" title="welcome" alt="welcome" />
    </center>
-<<<<<<< HEAD
->>>>>>> 1a4f5ac6abff3216d0bef735f87bdf8833ab35d6
-=======
->>>>>>> ecca6e9f9dc278d36fa2a847f578f7f713f966e4
 </body>
 </html>

@@ -7,47 +7,42 @@
 
   <body>
     <div class="header">
-      <div class="logo">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Universiti_Malaysia_Pahang.svg/1920px-Universiti_Malaysia_Pahang.svg.png" alt="UMP Logo" width="220" height="100">
-      </div>
       <div class="title" id="title"> </div>
       <h1 style="text-align: center;"> Make a booking</h1>
     </div>
          <h2>BOOKING</h2>
        <div class="detail">
-        <form action="./readBooking.php" method="post">
+        <form action="insertbooking.php" method="post">
            <table>
                <tr>
                    <th>
-                     <label for="staffid">Staff ID:</label><br>
+                     <label>Staff ID:</label><br>
                      <input type="text" id="staffid" name="staffid"><br>
                    </th>
                  
                    <th>
-                        <label for="item">Item:</label><br>
+                        <label>Item:</label><br>
                         <input list="item" name="item">
                         <datalist id="item">
-                          <option value="Marker">
-                          <option value="A4 paper">
-                          <option value="Paper clip">
-                          <option value="Paper Puncher">
-                          <option value="Stapler">
-                          <option value="Clear tape">  
+                          <option value="fk01">Printer</option>>
+                          <option value="fk02">Printer ink</option>
+                          <option value="fk03">A4 Paper</option>
+                          <option value="fk04">Marker pen</option>
+                          <option value="fk05">Stapler</option>
+                          <option value="fk06">Paper Puncher</option>
                         </datalist>
                     </th>
-                 
                     <th>
-                        <label for="qty">Quantity:</label><br>
+                        <label>Quantity:</label><br>
                         <input type="number" id="qty" name="qty"><br>  
                     </th> 
                  </tr>
            </table>
-           
-        </form>
+        
        </div>  
        <br>
-       <input type="submit" value="Submit">
+       <button type="submit">Submit</button></form>
   </body>
    
    
-  
+  </html>

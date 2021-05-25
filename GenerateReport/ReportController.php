@@ -41,7 +41,7 @@
                     <td colspan="5"><?php echo $Report_Date ?></td>
                 </tr>
                 <tr>
-                    <td><label for="Approved_Booking">Approval Booking:</label></td>
+                    <td><label for="Approved_Booking">Approved Booking:</label></td>
                     <td colspan="5"><?php echo $Approved_Booking ?></td>
                 </tr>
                 <tr>
