@@ -28,7 +28,7 @@
   <center>
     <h1><b>Inform New Order</b></h1>
          <div>
-            <table style="width:30%; border: 3px solid maroon;" border="1">
+            <table style="width:30%; border: 3px solid maroon; " border="1">
                 <tr>
                     <td><label for="Order_ID">Order ID:</label></td>
                     <td colspan="5"><?php echo $Order_ID ?></td>
