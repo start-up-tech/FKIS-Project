@@ -1,6 +1,6 @@
 <?php
 	
-	include("control.php");
+	include("controlbooking.php");
     extract( $_POST );
 	 
 	

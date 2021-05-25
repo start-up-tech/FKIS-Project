@@ -57,11 +57,15 @@ body {
 
   <a href="http://localhost/FKIS-Project/ApproveBooking/ApproveBookingView.php">Approve Booking</a>
 
+
   <a href="http://localhost/FKIS-Project/Requestbooking/requestbooking.html">Request Booking</a>
+
+  <a href="http://localhost/FKIS-Project/Requestbooking/reqbooking.php">Request Booking</a>
+
   <a href="http://localhost/FKIS-Project/InformNewOrder/view.php">Inform New Order</a>
   <a href="http://localhost/FKIS-Project/RoutineAudit/">Routine Audit</a>
   <a href="http://localhost/FKIS-Project/GenerateReport/GenerateReport.php">Generate Report</a>
-  <a href="http://localhost/FKIS-Project/Login/Loginindex.html">Logout</a>
+  <a href="http://localhost/FKIS-Project/Login/Login.php">Logout</a>
 </div>
 
 <span style="font-size:30px;cursor:pointer;float:left" onclick="openNav()">&#9776; Menu</span>
