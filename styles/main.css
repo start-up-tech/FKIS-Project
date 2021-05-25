@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 nav{
     text-align: center;
@@ -10,6 +11,6 @@ nav{
     padding: 2.5vh;
     margin-bottom: 3vh;
 }
-#loginPanel{
+#contentPanel {
     text-align: center;
 }
