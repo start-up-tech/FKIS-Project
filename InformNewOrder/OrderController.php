@@ -47,7 +47,7 @@
                 </tr>
  
             </table><br>
-              <br><button onclick="location.href='view.php'">Add Report</button><button onclick="location.href='DisplayReport.php'">Display Report</button><br><br>
+              <br><button onclick="location.href='view.php'">Add Report</button><button onclick="location.href='ModelOrder.php'">Display Report</button><br><br>
             <?php
             if($result) {
 		        echo("Data inserted");
