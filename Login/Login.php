@@ -1,13 +1,17 @@
-<html> 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title> Login Page </title>
-    <link rel="stylesheet" href="main.css"></head>
-
-    
-<body>  
-    <nav> FKIS SYSTEM </nav> 
-    <center><form method="post" action="information.php">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Report</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <nav>FKIS</nav>
+  <center>
+  <h1><b>LOGIN</b></h1>
+         <form method="post" action="information.php">
         
             <label>Username : </label> 
             <input type="text"  name="username" required><br><br>
