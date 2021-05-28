@@ -5,7 +5,6 @@
     $dbname = "fkisdb";
     /*
     fskdb  - darwish local(darwish)
-    fskdbb - darwish local(safwan)
     NOBODY TOUCH THIS 
     */
     
@@ -16,7 +15,7 @@
         echo "Failed to connect to database";
         exit();
     }
-    echo "Connection Success";
+    //echo "Connection Success";
         
     //Let's just say below is a forbidden move
     //mysql_connect($servername, $username, $password) or die("Error connecting to database: ".mysql_error());
