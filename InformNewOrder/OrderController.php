@@ -26,7 +26,7 @@
 <body>
 <nav><?php include '../styles/Sidebar.php'?>FKIS</nav>
   <center>
-    <h1><b>Inform New Order</b></h1>
+    <h1><b>Order List</b></h1>
          <div>
             <table style="width:30%; border: 3px solid maroon; " border="1">
                 <tr>
