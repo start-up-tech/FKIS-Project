@@ -16,6 +16,8 @@
                 <table style="border: 5px solid black;margin:20px;padding:100px; width:auto; background-color: #33C0FF;">
                     <tr>
                         <th>Enter Order ID to delete</th>
+                    </tr>
+                    <tr>
                         <td><label for="Order_ID">Order ID:</label></td>
                         <td colspan="5"><input type="text" name="Order_ID"/></td>
                         <td colspan="5"><input type="submit" name="delete" value="Delete ID" /></td>
