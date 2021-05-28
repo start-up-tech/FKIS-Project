@@ -1,5 +1,5 @@
 <?php
-	$link = mysqli_connect("localhost", "root") or die(mysqli_connect_error());
+	$link = mysqli_connect("localhost", "root", "") or die(mysqli_connect_error());
 
 	mysqli_select_db($link, "fkisdb") or die(mysqli_error());
     
@@ -47,7 +47,7 @@
                 </tr>
  
             </table><br>
-              <br><button onclick="location.href='view.php'">Add Report</button><button onclick="location.href='ModelOrder.php'">Display Report</button><br><br>
+              <br><button onclick="location.href='view.php'">Add Order</button><button onclick="location.href='DeleteController.php'">Delete List</button><button onclick="location.href='ModelOrder.php'">Display Report</button><br><br>
             <?php
             if($result) {
 		        echo("Data inserted");
@@ -55,6 +55,7 @@
 		    else {
 			    die("Insert failed. Report_ID already exist.");
             }
+
             mysqli_close($link);
             ?>
         </div>
