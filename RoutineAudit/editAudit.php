@@ -1,5 +1,4 @@
-
-<?php
+<?php 
     include 'connect.php';
     $auditid = $_POST['Audit_ID'];
     $adminid = $_POST['Admin_ID'];
@@ -30,15 +29,14 @@
     }else{$iq = $itemqty;}
 
     if(count(array_filter($_POST))==count($_POST)){
-        $q = "INSERT INTO routine_audit (Audit_ID, Admin_ID, Item_Code, Item_Quantity) 
-            VALUES ('$au', '$ad', '$ic','$iq')";
+        $q = "UPDATE routine_audit SET Audit_ID='$au', Admin_ID='$ad',Item_Code='$ic',Item_Quantity='$iq' WHERE Audit_ID='$au'";
         if(mysqli_query($con, $q)){
-            echo('<script>alert("New audit successful")</script>');
+            echo('<script>alert("Audit updated successfully")</script>');
             echo('<script>window.location.href = "index.php";</script>');
         } else {
             echo "ERROR: Could not able to execute $q. " . mysqli_error($con);
         }
     }
-   
-?>
 
+
+?>
