@@ -15,55 +15,7 @@
         <button onclick="openDiv(theID = 'panelSearch')">Search</button>
         <button onclick="openDiv(theID = 'newAudit')">New</button>
         <br><br>
-        <script>
-            var theID;
-
-            var theSearch;
-            var theNew;
-            var theEdit;
-            
-            window.onload = function(){
-                loadPage();
-            }
-            function loadPage(){
-                theSearch = document.getElementById('panelSearch');
-                theNew = document.getElementById('newAudit');
-                theEdit = document.getElementById('editAudit');
-                theSearch.style.display = "none";
-                theNew.style.display = "none";
-                theEdit.style.display = "none";
-            }
-            
-            function openDiv(theId){
-                var x = document.getElementById(theID);
-                switch(theID){
-                    case 'panelSearch':
-                        var y = theNew;
-                        break;
-                    case 'newAudit':
-                        var y = theSearch;
-                        break;
-                    default :
-                        break;
-                }
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                    y.style.display = "none";
-                }else{
-                    x.style.display = "none";
-                    y.style.display = "block";
-                }
-            }
-            function editAudit(auditid,adminid,itemcode,itemqty)
-            {
-                theEdit.style.display = "block";
-                theTable.style.display = "none";
-                document.getElementById("au").value = auditid;
-                document.getElementById("ad").value = adminid;
-                document.getElementById("ic").value = itemcode;
-                document.getElementById("iq").value = itemqty;
-            }
-        </script>
+        <script type="text/javascript" src="./audit.js"></script>
     </div>
     <form id="panelSearch" action="index.php" method="POST">
         <input type="text" name="search" id="" placeholder="Audit ID">
@@ -104,23 +56,29 @@
                     $itemcode = $row['Item_Code'];
                     $itemqty = $row['Item_Quantity'];
 
-                    //WAIT//$output .= '<tr> <td> <button>' .$auditid. '</button></td> <td>' .$adminid. '</td> <td>' .$itemcode. '</td> <td>' .$ItemQty.'<td>Edit</td></tr>';
-                    $output = '<tr>
+                    print '<tr>
                         <td>'.$auditid.'</td>
                         <td>'.$adminid.'</td>
                         <td>'.$itemcode.'</td>
                         <td>'.$itemqty.'</td>
                         <td><button onClick="editAudit('.$auditid.','.$adminid.','.$itemcode.','.$itemqty.')">Edit</button></td>
                         </tr>';
-                    print $output;
                 }
                 print '</table>';
             }
         }
-        //WAIT//print '<table>';
-        //WAIT//print '<tr> <th>Audit ID</th> <th>Admin ID</th> <th>Item Code</th> <th>Quantity</th> <th></th></tr>';
-        //WAIT//print("$output");
-        //WAIT//print '</table>';
     ?>
+    <script>
+        function editAudit(auditid,adminid,itemcode,itemqty)
+        {
+            theEdit.style.display = "block";
+            theTable.style.display = "none";
+            
+            document.getElementById("au").value = auditid;
+            document.getElementById("ad").value = adminid;
+            document.getElementById("ic").value = itemcode;
+            document.getElementById("iq").value = itemqty;
+        }
+    </script>
 </body>
 </html>

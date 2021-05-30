@@ -37,6 +37,5 @@
             echo "ERROR: Could not able to execute $q. " . mysqli_error($con);
         }
     }
-
-
 ?>
+
