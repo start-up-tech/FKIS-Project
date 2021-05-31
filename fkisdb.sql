@@ -77,16 +77,28 @@ CREATE TABLE `new_order` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `registration`
+-- Table structure for table `login`
 --
 
-CREATE TABLE `registration` (
+CREATE TABLE `login` (
   `Username` varchar(10) NOT NULL,
   `Password` varchar(20) NOT NULL,
-  `Email` varchar(20) NOT NULL,
+  `level` varchar(20) NOT NULL,
+  `email` varchar(20) NOT NULL,
   `Admin_ID` varchar(10) NOT NULL,
   `Staff_ID` varchar(10) NOT NULL,
   `Treasurer_ID` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `recoverpassword`
+--
+
+CREATE TABLE `recoverpassword` (
+  `email` varchar(20) NOT NULL,
+  `token` varchar(20) NOT NULL, 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -188,6 +200,13 @@ ALTER TABLE `registration`
   ADD KEY `Admin_ID` (`Admin_ID`),
   ADD KEY `Staff_ID` (`Staff_ID`),
   ADD KEY `Treasurer_ID` (`Treasurer_ID`);
+
+--
+-- Indexes for table `recoverpassword`
+--
+ALTER TABLE `recoverpassword`
+  
+  ADD KEY `token` (`token`);
 
 --
 -- Indexes for table `report`
