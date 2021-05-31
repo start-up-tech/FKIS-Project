@@ -47,7 +47,7 @@
                 </tr>
  
             </table><br>
-              <br><button onclick="location.href='AddOrderInterface.php'">Add Order</button><button onclick="location.href='DeleteController.php'">Delete Order</button><button onclick="location.href='ModelOrder.php'">Display List</button><br><br>
+              <br><button onclick="location.href='view.php'">Add Order</button><button onclick="location.href='DeleteController.php'">Delete Order</button><button onclick="location.href='ModelOrder.php'">Display List</button><br><br>
             <?php
             if($result) {
 		        echo("Data inserted");
