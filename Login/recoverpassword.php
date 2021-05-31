@@ -1,4 +1,4 @@
-<?php include('app_logic.php'); ?>
+<?php include('recoverlogic.php'); ?>
 
 <html lang="en">
 <head>
