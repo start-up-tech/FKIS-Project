@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="main2.css">
 </head>
 <body>
-	<form class="login-form" action="enter_email.php" method="post">
+	<form class="login-form" action="recoverpassword.php" method="post">
 		<h2 class="form-title">Reset password</h2>
 		<!-- form validation messages -->
 		<?php include('messages.php'); ?>
