@@ -17,7 +17,7 @@
 <body>
 <nav><?php include '../styles/Sidebar.php'?>FKIS</nav>
   <center>
-    <h1><b>Report List</b></h1>
+    <h1><b>Order List</b></h1>
         <table style="border: 5px solid black;margin:20px;padding:100px; width:60%; background-color: #33C0FF;">
             <thead>
                 <th colspan="5">Order ID</th>
