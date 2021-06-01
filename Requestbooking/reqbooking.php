@@ -8,18 +8,18 @@
   <body>
     <div class="header">
       <div class="title" id="title"> </div>
-      <h1 style="text-align: center;"><?php include '../styles/Sidebar.php'?> Make a booking</h1>
+      <h1 style="text-align: center;"> Make a booking</h1>
     </div>
          <h2>BOOKING</h2>
+
        <div class="detail">
         <form action="insertbooking.php" method="post">
            <table>
                <tr>
                    <th>
                      <label>Staff ID:</label><br>
-                     <input type="text" id="staffid" name="staffid"><br>
+                     <input type="text" id="Staff_ID" name="Staff_ID"><br>
                    </th>
-                 
                    <th>
                         <label>Item:</label><br>
                         <input list="item" name="item">
@@ -42,7 +42,9 @@
        </div>  
        <br>
        <button type="submit">Submit</button></form>
+
+
   </body>
    
    
-  </html>
+</html>
