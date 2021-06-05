@@ -41,7 +41,7 @@
 			
 			
 		</form>
-		<p><a href="enter_email.php">Forgot your password?</a></p>
+		<p><a href="recoverpassword.php">Forgot your password?</a></p>
 </center>
  
  
