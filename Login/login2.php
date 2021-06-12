@@ -2,14 +2,15 @@
 <head>
 	<title>Login</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
+
 </head>
 <body>
  <nav>FKIS SYSTEM</nav>
 	<center>
 	USER LOGIN :
 <?php 
-	if(isset($_POST['login'])){
-		if($_POST['login']=="fail"){
+	if(isset($_GET['login'])){
+		if($_GET['login']=="fail"){
 			echo "<div class='alert'>Username dan Password are not correct!</div>";
 		}
 	}
@@ -29,11 +30,12 @@
 			<br><br>
 
 			<label for="Level"><b>User Type :</b></label>
-                <select id="Level" name="level" class="loginclass">
+                <select id="Level" name="level" class="form_login">
                     <option value="admin">Admin</option>
                     <option value="staff">Staff</option>
                     <option value="treasurer">Treasurer</option>
                     
+			
                 </select>
 				<br><br>
 
@@ -41,9 +43,8 @@
 			
 			
 		</form>
-		<p><a href="recoverpassword.php">Forgot your password?</a></p>
+		<p><a href="recoverpassword.php">Forgot Password</a></p>
 </center>
- 
  
 </body>
 </html>

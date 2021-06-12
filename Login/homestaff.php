@@ -21,8 +21,8 @@
 	</div>
 	</div>
 	</nav>
-	<h3>REQUEST BOOKING</h3>
-		&emsp; <a href="reqbooking.php"><img src="reqbooking.jpg" width="400" height="200" /></a><br><br><br>
+	&emsp; <h3>REQUEST BOOKING</h3>
+		&emsp; <a href=""><img src="images/reqbooking.jpg" width="400" height="200" /></a><br><br><br>
 	
 </body>
 </html>	

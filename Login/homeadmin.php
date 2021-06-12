@@ -21,9 +21,9 @@
 	</div>
 	</div>
 	</nav>
-	&emsp; <a href="index.php"><img src="audit.png" width="400" height="200" />  </a> 
-	&emsp; <a href="ApprovedBookingInterface.php"><img src="APPBOOKING.JPG" width="400" height="200" /></a>
-	&emsp; <a href="GenerateReport.php"><img src="report.jpg" width="400" height="200" /></a><br><br><br>
-	&emsp; <a href="view.php"><img src="neworder.png" width="400" height="200" /></a>
+	&emsp; <a href=""><img src="images/audit.png" width="400" height="200" />  </a> 
+	&emsp; <a href=""><img src="images/APPBOOKING.JPG" width="400" height="200" /></a>
+	&emsp; <a href=""><img src="images/report.jpg" width="400" height="200" /></a><br><br><br>
+	&emsp; <a href=""><img src="images/neworder.png" width="400" height="200" /></a>
 </body>
 </html>

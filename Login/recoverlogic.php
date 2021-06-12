@@ -3,12 +3,12 @@
 session_start();
 $errors = [];
 $username = "";
-// connect to database
+
 $db = mysqli_connect('localhost', 'root', '', 'fkisdb');
 
 if (isset($_POST['reset-password'])) {
   $email = mysqli_real_escape_string($db, $_POST['email']);
-  // ensure that the user exists on our system
+ 
   $query = "SELECT email FROM registration WHERE email='$email'";
   $results = mysqli_query($db, $query);
 

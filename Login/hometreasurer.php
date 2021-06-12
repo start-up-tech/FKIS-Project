@@ -21,7 +21,7 @@
 	</div>
 	</div>
 	</nav>
-		&emsp; <a href="GenerateReport.php"><img src="report.jpg" width="400" height="200" /></a><br><br><br>
+		&emsp; <a href=""><img src="images/report.jpg" width="400" height="200" /></a><br><br><br>
 	
 </body>
 </html>	
