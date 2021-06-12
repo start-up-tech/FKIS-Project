@@ -91,14 +91,24 @@ CREATE TABLE `login` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
+-- Dumping data for table `registration`
+--
 
+INSERT INTO `login` (`Username`, `Password`, `level`, `email`, `Admin_ID`, `Staff_ID`, `Treasurer_ID`) VALUES
+('Admin1234', 'admin123', 'admin', 'ayunibaiduri07@gmail.com', 'CB19087', '', ''),
+('Staff1234', 'Staff123', 'staff', 'AfikahAlias45@gmail.com\r\n', '', 'ST19086', ''),
+('Treasurer1', 'treasure123', 'treasurer', 'Abcde122@gmail.com', '', '', 'TS12345');
+
+-- --------------------------------------------------------
+
+--
 --
 -- Table structure for table `recoverpassword`
 --
 
 CREATE TABLE `recoverpassword` (
   `email` varchar(20) NOT NULL,
-  `token` varchar(20) NOT NULL, 
+  `token` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -191,22 +201,6 @@ ALTER TABLE `booking_conformation`
 ALTER TABLE `new_order`
   ADD PRIMARY KEY (`Order_ID`),
   ADD KEY `Admin_ID` (`Admin_ID`);
-
---
--- Indexes for table `registration`
---
-ALTER TABLE `registration`
-  ADD PRIMARY KEY (`Username`),
-  ADD KEY `Admin_ID` (`Admin_ID`),
-  ADD KEY `Staff_ID` (`Staff_ID`),
-  ADD KEY `Treasurer_ID` (`Treasurer_ID`);
-
---
--- Indexes for table `recoverpassword`
---
-ALTER TABLE `recoverpassword`
-  
-  ADD KEY `token` (`token`);
 
 --
 -- Indexes for table `report`
