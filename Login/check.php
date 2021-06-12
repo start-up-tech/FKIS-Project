@@ -7,7 +7,7 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 
 
-$login = mysqli_query($mysqli,"select * from registration where Username='$username' and Password='$password'");
+$login = mysqli_query($mysqli,"select * from login where Username='$username' and Password='$password'");
 $check = mysqli_num_rows($login);
 
 
