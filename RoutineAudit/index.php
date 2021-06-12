@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php include 'connect.php';?>
-    <nav><?php include '../styles/Sidebar.php'?>FKIS</nav>
+    <nav><?php include '../styles/sidebaradmin.php'?>FK Inventory System</nav>
 
     <div> 
         <button onclick="openDiv(theID = 'panelSearch')">Search</button>

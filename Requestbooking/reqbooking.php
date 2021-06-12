@@ -8,9 +8,9 @@
   <body>
     <div class="header">
       <div class="title" id="title"> </div>
-      <h1 style="text-align: center;"> Make a booking</h1>
+      <nav><?php include '../styles/sidebarstaff.php'?>FK Inventory System</nav>
     </div>
-         <h2>BOOKING</h2>
+         <h2>MAKE A BOOKING</h2>
 
        <div class="detail">
         <form action="insertbooking.php" method="post">

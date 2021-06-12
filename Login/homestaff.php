@@ -8,19 +8,7 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-   <nav>FK Inventory System</nav>
-   <nav id="barlist"> 
-		<div class="topnav">
-		<a class="active">Home</a>
-  		<a href="#">Sample</a>
-  		<a href="#">Sample</a>
-  		<a href="#">Report</a>
-
-	<div class ="topnav-right">
-		<a href="logout.php">Logout</a>
-	</div>
-	</div>
-	</nav>
+  <nav><?php include '../styles/sidebarstaff.php'?>FK Inventory System</nav> 
 	&emsp; <h3>REQUEST BOOKING</h3>
 		&emsp; <a href=""><img src="images/reqbooking.jpg" width="400" height="200" /></a><br><br><br>
 	

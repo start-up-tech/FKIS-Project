@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
-<nav><?php include '../styles/Sidebar.php'?>FKIS</nav>
+<nav><?php include '../styles/sidebaradmin.php'?>FK Inventory System</nav>
     <h1><b>Booking List</b></h1>
 <center>
     <form name ="goodsform" action="" method="post"> 

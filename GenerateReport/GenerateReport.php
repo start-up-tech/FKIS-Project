@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
-    <nav><?php include '../styles/Sidebar.php'?>FKIS</nav>
+    <nav><?php include '../styles/sidebaradmin.php'?>FK Inventory System</nav>
   <center>
     <h1><b>Generate Report</b></h1>
         <div>

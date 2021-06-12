@@ -51,13 +51,9 @@ body {
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="/FKIS-Project/index.php">Home</a>
-  <a href="/FKIS-Project/ApproveBooking/ApproveBookingView.php">Approve Booking</a>
-  <a href="/FKIS-Project/Requestbooking/reqbooking.php">Request Booking</a>
-  <a href="/FKIS-Project/InformNewOrder/view.php">Inform New Order</a>
-  <a href="/FKIS-Project/RoutineAudit/">Routine Audit</a>
-  <a href="/FKIS-Project/GenerateReport/GenerateReport.php">Generate Report</a>
-  <a href="/FKIS-Project/Login/Login.php">Logout</a>
+  <a href="/FKIS-Project/Login/hometreasurer.php">Home</a>
+  <a href="/FKIS-Project/GenerateReport/DisplayReport.php">Report</a>
+  <a href="/FKIS-Project/Login/logout.php">Logout</a>
 </div>
 
 <span style="font-size:30px;cursor:pointer;float:left" onclick="openNav()">&#9776; Menu</span>

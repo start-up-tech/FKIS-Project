@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
-    <nav><?php include '../styles/Sidebar.php'?>FKIS</nav>
+    <nav>FK Inventory System</nav>
   <center>
     <h1><b>Report List</b></h1>
         <table style="border: 3px solid maroon;margin:10px;padding:50px; width:60%;">
