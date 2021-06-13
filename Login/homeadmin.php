@@ -63,7 +63,7 @@ article {
 
 /* Style the footer */
 footer {
-    background-color:hsl(0, 80%, 50%);
+    background-color:hsl(0, 0%, 95%);
   padding: 10px;
   text-align: center;
   color: white;
@@ -99,19 +99,20 @@ footer {
 <section>
   <b>
     <ul>
-      <a href="#"><img src ="images/petakom.jpg"/><br>
+      <a href="#"><img src ="images/fk.jpg"/><br>
     </ul>
 </b>
   
   <article>
     <h1>About Us<h1>
 <P>
-This system is for the use for Faculty of Computing staff to manage the inventory of the faculty.<br><br><br><br>
+This system is for the use for Faculty of Computing staff to manage the inventory of the faculty.<br>
+This is the first version of FKIS System.<br><br><br><br><br><br>
 <div  class="date" id="currDateTime"> </div>
 </div>
 </p>
 </article>
-</section>
+</section><br>
 
 <footer>
   <p><a href="#"><img src ="images/socmed.png"/></p>
