@@ -34,11 +34,11 @@ section {
 }
 
 /* Style the navigation menu */
-nav {
+nav a {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  background: maroon;
+  background: blue;
   padding: 20px;
 }
 
@@ -86,13 +86,13 @@ footer {
 </header>
 
 <section>
-  <nav>
+  <a>
     <ul>
       <li><a href="#">London</a></li>
       <li><a href="#">Paris</a></li>
       <li><a href="#">Tokyo</a></li>
     </ul>
-  </nav>
+</a>
   
   <article>
     <h1>London</h1>
