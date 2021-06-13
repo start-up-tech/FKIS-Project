@@ -53,5 +53,4 @@ if (isset($_POST['reset-password'])) {
       header('location: login2.php');
     }
   }
-}
 ?>
