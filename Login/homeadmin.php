@@ -34,7 +34,7 @@ section {
 }
 
 /* Style the navigation menu */
-nav a {
+a {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
