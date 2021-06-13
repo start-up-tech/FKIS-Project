@@ -44,7 +44,9 @@ CREATE TABLE `booking` (
   `Booking_ID` varchar(10) NOT NULL,
   `Staff_ID` varchar(10) NOT NULL,
   `Item_Code` varchar(20) NOT NULL,
-  `Item_Quantity` int(100) NOT NULL
+  `Item_Quantity` int(100) NOT NULL,
+  `Requestdate` date NOT NULL,
+  `Collection_status` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -77,17 +79,27 @@ CREATE TABLE `neworder` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `registration`
+-- Table structure for table `login`
 --
 
-CREATE TABLE `registration` (
+CREATE TABLE `login` (
   `Username` varchar(10) NOT NULL,
   `Password` varchar(20) NOT NULL,
-  `Email` varchar(20) NOT NULL,
+  `level` varchar(10) NOT NULL,
+  `email` varchar(100) NOT NULL,
   `Admin_ID` varchar(10) NOT NULL,
   `Staff_ID` varchar(10) NOT NULL,
   `Treasurer_ID` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `registration`
+--
+
+INSERT INTO `registration` (`Username`, `Password`, `level`, `email`, `Admin_ID`, `Staff_ID`, `Treasurer_ID`) VALUES
+('Admin1234', 'admin123', 'admin', 'ayunibaiduri07@gmail.com', 'CB19087', '', ''),
+('Staff1234', 'Staff123', 'staff', 'AfikahAlias45@gmail.com\r\n', '', 'ST19086', ''),
+('Treasurer1', 'treasure123', 'treasurer', 'ABCDE122@gmail.com', '', '', 'TS12345');
 
 -- --------------------------------------------------------
 
@@ -174,9 +186,9 @@ ALTER TABLE `neworder`
   ADD KEY `Admin_ID` (`Admin_ID`);
 
 --
--- Indexes for table `registration`
+-- Indexes for table `login`
 --
-ALTER TABLE `registration`
+ALTER TABLE `login`
   ADD PRIMARY KEY (`Username`),
   ADD KEY `Admin_ID` (`Admin_ID`),
   ADD KEY `Staff_ID` (`Staff_ID`),
@@ -238,14 +250,6 @@ ALTER TABLE `bookingconfirmation`
 --
 ALTER TABLE `neworder`
   ADD CONSTRAINT `neworder_ibfk_1` FOREIGN KEY (`Admin_ID`) REFERENCES `admin` (`Admin_ID`);
-
---
--- Constraints for table `registration`
---
-ALTER TABLE `registration`
-  ADD CONSTRAINT `registration_ibfk_1` FOREIGN KEY (`Admin_ID`) REFERENCES `admin` (`Admin_ID`),
-  ADD CONSTRAINT `registration_ibfk_2` FOREIGN KEY (`Staff_ID`) REFERENCES `umpstaff` (`Staff_ID`),
-  ADD CONSTRAINT `registration_ibfk_3` FOREIGN KEY (`Treasurer_ID`) REFERENCES `treasurer` (`Treasurer_ID`);
 
 --
 -- Constraints for table `report`
