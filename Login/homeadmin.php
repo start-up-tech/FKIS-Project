@@ -20,7 +20,7 @@ body {
 
 /* Style the header */
 header {
-  background-color: #666;
+  background-image: url('FKBUILDING.jpg');
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -79,10 +79,6 @@ footer {
 <h2>WELCOME TO FKIS ADMIN PAGE</h2>
 
 <header>
-<p> <div class="brand logo">
-        <img src="images/FKBUILDING.JPG"/>
-      </a>
-    </div></p>
   <h2>Cities</h2>
 </header>
 
