@@ -10,13 +10,7 @@
       <div class="title" id="title"> </div>
       <nav><?php include '../styles/sidebarstaff.php'?>FK Inventory System</nav>
     </div>
-<<<<<<< Updated upstream
          <h2>MAKE A BOOKING</h2>
-=======
-         <h2>BOOKING</h2>
-       
->>>>>>> Stashed changes
-
        <div class="detail">
         <form action="insertbooking.php" method="post">
            <table>
