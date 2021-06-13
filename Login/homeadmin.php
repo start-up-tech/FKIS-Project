@@ -55,6 +55,7 @@ article {
   flex: 3;
   background-color: #f1f1f1;
   padding: 10px;
+  color: black;
 }
 
 /* Style the footer */
