@@ -9,7 +9,7 @@ $db = mysqli_connect('localhost', 'root', '', 'fkisdb');
 if (isset($_POST['reset-password'])) {
   $email = mysqli_real_escape_string($db, $_POST['email']);
  
-  $query = "SELECT email FROM registration WHERE email='$email'";
+  $query = "SELECT email FROM login WHERE email='$email'";
   $results = mysqli_query($db, $query);
 
   if (empty($email)) {
@@ -36,11 +36,6 @@ if (isset($_POST['reset-password'])) {
   }
 }
 
-// ENTER A NEW PASSWORD
-if (isset($_POST['new_password'])) {
-  $new_pass = mysqli_real_escape_string($db, $_POST['new_pass']);
-  $new_pass_c = mysqli_real_escape_string($db, $_POST['new_pass_c']);
-
   // Grab to token that came from the email link
   $token = $_SESSION['token'];
   if (empty($new_pass) || empty($new_pass_c)) array_push($errors, "Password is required");
@@ -53,7 +48,7 @@ if (isset($_POST['new_password'])) {
 
     if ($email) {
       $new_pass = md5($new_pass);
-      $sql = "UPDATE registration SET password='$new_pass' WHERE email='$email'";
+      $sql = "UPDATE login SET password='$new_pass' WHERE email='$email'";
       $results = mysqli_query($db, $sql);
       header('location: login2.php');
     }
