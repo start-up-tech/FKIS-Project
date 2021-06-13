@@ -77,12 +77,12 @@ footer {
 <body>
 
 <h2>WELCOME TO FKIS ADMIN PAGE</h2>
+
+<header>
 <p> <div class="brand logo">
         <img src="images/FKBUILDING.JPG"/>
       </a>
     </div></p>
-
-<header>
   <h2>Cities</h2>
 </header>
 
