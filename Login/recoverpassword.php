@@ -19,5 +19,6 @@
 			<button type="submit" name="reset-password" class="login-btn">Submit</button>
 		</div>
 	</form>
+	<p><center><p><a href="login2.php">BACK TO LOGIN PAGE</a></</center></p>
 </body>
 </html>
