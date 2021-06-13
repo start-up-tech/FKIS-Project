@@ -20,11 +20,11 @@ body {
 
 /* Style the header */
 header {
-  background-image: url('FKBUILDING.jpg');
+  background-image: ('FKBUILDING.jpg');
   padding: 30px;
   text-align: center;
   font-size: 35px;
-  color: white;
+  color: black;
 }
 
 /* Container for flexboxes */
