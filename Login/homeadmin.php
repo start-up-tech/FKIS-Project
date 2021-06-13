@@ -59,7 +59,7 @@ article {
 
 /* Style the footer */
 footer {
-  background-color:rgba(255, 99, 71, 0.6);
+    background-color:hsl(0, 80%, 50%);
   padding: 10px;
   text-align: center;
   color: white;
@@ -82,7 +82,7 @@ footer {
 <section>
   <b>
     <ul>
-      <li><a href="#"><img src ="images/petakom.jpg"/></li><br>
+      <a href="#"><img src ="images/petakom.jpg"/><br>
     </ul>
 </b>
   
