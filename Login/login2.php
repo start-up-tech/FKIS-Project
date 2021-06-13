@@ -21,15 +21,15 @@
 			
 			
 			<br>
-			<label><b>Username :</b></label>
+			<label>Username :</label>
 			<input type="text" name="username" class="form_login" placeholder="Username .." required="required">
 			<br><br>
 
-			<label><b>Password :</b></label>
+			<label>Password :</label>
 			<input type="password" name="password" class="form_login" placeholder="Password .." required="required">
 			<br><br>
 
-			<label for="Level"><b>User Type :</b></label>
+			<label for="Level">User Type :</label>
                 <select id="Level" name="level" class="form_login">
                     <option value="admin">Admin</option>
                     <option value="staff">Staff</option>
