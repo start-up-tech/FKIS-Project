@@ -41,7 +41,7 @@ b {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  background-color:hsl(0, 79%, 46%);
+  background-color:hsl(0, 0%, 85%);
   padding: 20px;
 }
 
@@ -94,7 +94,7 @@ footer {
 
 <header>
   <h2>Welcome to the Admin page of FKIS System :]</h2>
-</header>
+</header><br>
 
 <section>
   <b>
