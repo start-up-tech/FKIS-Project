@@ -58,3 +58,4 @@ if (isset($_POST['new_password'])) {
       header('location: login2.php');
     }
   } 
+}
