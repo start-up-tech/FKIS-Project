@@ -20,7 +20,7 @@ body {
 
 /* Style the header */
 header {
-  background-color:rgba(255, 99, 71, 0.6);
+    background-color:hsl(0, 79%, 40%);
   padding: 30px;
   text-align: center;
   font-size: 35px;
