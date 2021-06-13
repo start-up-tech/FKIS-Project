@@ -93,48 +93,13 @@ select[id=Level]
 	text-align: center;
 	border:1px solid #b32929;
 }
-
-
-.topnav {
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: rgb(255, 255, 255);
-	border: 2px solid #ccc;
-  }
-  
-  
-  .topnav a {
-	display: block;
-	color: rgb(0, 0, 0);
-	text-align: center;
-	padding: 10px 16px;
-	text-decoration: none;
-	border: 1px solid #ccc;
-	float: left;
-  }
-  
-  .topnav a:hover:not(.active) {
-	background-color: rgb(194, 194, 194);
-  }
-  
-  .topnav a.active {
-	background-color: #020202;
-	color: rgb(255, 255, 255);
-  }
-
-.topnav-right a
-{
-	background-color: maroon;
-	color: rgb(0, 0, 0);
-	float:right;
-}  
+ 
 
 * {
 	box-sizing: border-box;
   }
   /* Create two columns/boxes that floats next to each other */
-leftbx {
+leftbox {
 	float: left;
 	width: 30%;
 	height: 300px; /* only for demonstration, should be removed */
@@ -143,7 +108,7 @@ leftbx {
   }
   
   /* Style the list inside the menu */
-  nav ul {
+  leftbox ul {
 	list-style-type: none;
 	padding: 0;
   }

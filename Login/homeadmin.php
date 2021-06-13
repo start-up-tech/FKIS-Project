@@ -22,13 +22,13 @@
 </header>
 
 <section>
-  <nav>
+  <leftbox>
     <ul>
       <li><a href="#">London</a></li>
       <li><a href="#">Paris</a></li>
       <li><a href="#">Tokyo</a></li>
     </ul>
-  </nav>
+</leftbox>
   
   <article>
     <h1>London</h1>
@@ -41,9 +41,5 @@
   <p>Footer</p>
 </footer>
 
-	&emsp; <a href=""><img src="images/audit.png" width="400" height="200" />  </a> 
-	&emsp; <a href=""><img src="images/APPBOOKING.JPG" width="400" height="200" /></a>
-	&emsp; <a href=""><img src="images/report.jpg" width="400" height="200" /></a><br><br><br>
-	&emsp; <a href=""><img src="images/neworder.png" width="400" height="200" /></a>
 </body>
 </html>
