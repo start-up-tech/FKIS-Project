@@ -7,10 +7,8 @@
     <title>FKIS Online</title>
     <link rel="stylesheet" href="main.css">
 </head>
-<body>
    <nav><?php include '../styles/sidebaradmin.php'?>FK Inventory System</nav>
-
-   </head>
+</head>
    <style>
 * {
   box-sizing: border-box;
@@ -40,7 +38,7 @@ nav {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  background: #ccc;
+  background: maroon;
   padding: 20px;
 }
 
