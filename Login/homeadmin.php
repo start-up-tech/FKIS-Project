@@ -76,10 +76,12 @@ footer {
 </head>
 <body>
 
-<h2>CSS Layout Flexbox</h2>
-<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
-<p>Resize the browser window to see the responsive effect.</p>
-<p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 and earlier versions.</p>
+<h2>WELCOME TO FKIS ADMIN PAGE</h2>
+<p> <div class="brand logo">
+      <a href="/en" title="Home" rel="home" class="site-branding-logo">
+        <img src="/img/logo-ump-2021-3.png" alt="Home" />
+      </a>
+    </div></p>
 
 <header>
   <h2>Cities</h2>
