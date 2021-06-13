@@ -91,7 +91,7 @@ footer {
     }
     
     $sql = "SELECT * FROM login"; ?>
-    
+
 <header>
   <h2>Welcome to the Admin page of FKIS System :]</h2>
 </header>
@@ -106,7 +106,7 @@ footer {
   <article>
     <h1>About Us<h1>
 <P>
-This system is for the use for Faculty of Computing staff to manage the inventory of the faculty.
+This system is for the use for Faculty of Computing staff to manage the inventory of the faculty.<br><br>
 <div  class="date" id="currDateTime"> </div>
 </div>
 </p>
