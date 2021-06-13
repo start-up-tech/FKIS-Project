@@ -84,10 +84,10 @@ CREATE TABLE `login` (
   `Username` varchar(10) NOT NULL,
   `Password` varchar(20) NOT NULL,
   `level` varchar(20) NOT NULL,
-  `email` varchar(20) NOT NULL,
+  `email` varchar(50) NOT NULL,
   `Admin_ID` varchar(10) NOT NULL,
   `Staff_ID` varchar(10) NOT NULL,
-  `Treasurer_ID` varchar(30) NOT NULL
+  `Treasurer_ID` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
