@@ -20,7 +20,7 @@ body {
 
 /* Style the header */
 header {
-  background-image: url ('images/download.png');
+  background-color:rgba(255, 99, 71, 0.6);
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -59,7 +59,7 @@ article {
 
 /* Style the footer */
 footer {
-  background-color: #777;
+  background-color:rgba(255, 99, 71, 0.6);
   padding: 10px;
   text-align: center;
   color: white;
@@ -75,31 +75,28 @@ footer {
 </style>
 </head>
 <body>
-
-<h2>WELCOME TO FKIS ADMIN PAGE</h2>
-
 <header>
-  <h2>Cities</h2>
+  <h2>Welcome to the Admin page of FKIS System :]</h2>
 </header>
 
 <section>
   <b>
     <ul>
-      <li><a href="#">London</a></li>
-      <li><a href="#">Paris</a></li>
-      <li><a href="#">Tokyo</a></li>
+      <li><a href="#"><img src ="images/petakom.jpg"/></li><br>
     </ul>
 </b>
   
   <article>
-    <h1>London</h1>
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-  </article>
+    <h1>Welcome to Faculty of Computing<h1>
+<P>
+Faculty of Computing (formerly known as Faculty of Computer Systems & Software Engineering) was established on 16 February 2002 to produce knowledgeable, high skilled and competitive graduates within the sphere of software engineering, system and computer network. At the beginning, the faculty had two fields which are Software Engineering and Networking.
+The faculty has also embarked on research and development activities in the area such as information systems, software engineering, computer systems, communication systems, graphic and multimedia technology to produce technologies that are relevant to the needs of industries.
+</p>
+</article>
 </section>
 
 <footer>
-  <p>Footer</p>
+  <p><a href="#"><img src ="images/socmed.png"/></p>
 </footer>
 
 </body>
