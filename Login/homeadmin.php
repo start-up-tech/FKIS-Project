@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FKIS Online</title>
     <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="calculationwarden.js"></script>
 </head>
    <nav><?php include '../styles/sidebaradmin.php'?>FK Inventory System</nav>
 </head>
@@ -38,7 +39,7 @@ b {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  background: blue;
+  background-color:hsl(0, 79%, 46%);
   padding: 20px;
 }
 
@@ -88,10 +89,11 @@ footer {
 </b>
   
   <article>
-    <h1>Welcome to Faculty of Computing<h1>
+    <h1>About Us<h1>
 <P>
-Faculty of Computing (formerly known as Faculty of Computer Systems & Software Engineering) was established on 16 February 2002 to produce knowledgeable, high skilled and competitive graduates within the sphere of software engineering, system and computer network. At the beginning, the faculty had two fields which are Software Engineering and Networking.
-The faculty has also embarked on research and development activities in the area such as information systems, software engineering, computer systems, communication systems, graphic and multimedia technology to produce technologies that are relevant to the needs of industries.
+This system is for the use for Faculty of Computing staff to manage the inventory of the faculty.
+<div  onload="getDateTime()" class="date" id="currDateTime"> </div>
+</div>
 </p>
 </article>
 </section>
