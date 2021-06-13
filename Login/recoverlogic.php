@@ -36,6 +36,11 @@ if (isset($_POST['reset-password'])) {
   }
 }
 
+// ENTER A NEW PASSWORD
+if (isset($_POST['new_password'])) {
+  $new_pass = mysqli_real_escape_string($db, $_POST['new_pass']);
+  $new_pass_c = mysqli_real_escape_string($db, $_POST['new_pass_c']);
+
   // Grab to token that came from the email link
   $token = $_SESSION['token'];
   if (empty($new_pass) || empty($new_pass_c)) array_push($errors, "Password is required");
@@ -53,4 +58,4 @@ if (isset($_POST['reset-password'])) {
       header('location: login2.php');
     }
   }
-?>
+}
