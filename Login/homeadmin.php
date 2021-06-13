@@ -7,6 +7,8 @@
     <title>FKIS Online</title>
     <link rel="stylesheet" href="main.css">
     <script type="text/javascript" src="calculationwarden.js"></script>
+    <?php 
+include("control.php"); ?>
 </head>
    <nav><?php include '../styles/sidebaradmin.php'?>FK Inventory System</nav>
 </head>
