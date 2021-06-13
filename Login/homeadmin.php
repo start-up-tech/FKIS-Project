@@ -78,8 +78,7 @@ footer {
 
 <h2>WELCOME TO FKIS ADMIN PAGE</h2>
 <p> <div class="brand logo">
-      <a href="/en" title="Home" rel="home" class="site-branding-logo">
-        <img src="/img/logo-ump-2021-3.png" alt="Home" />
+        <img src="images/FKBUILDING.JPG"/>
       </a>
     </div></p>
 
