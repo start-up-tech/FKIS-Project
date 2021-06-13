@@ -20,7 +20,7 @@ body {
 
 /* Style the header */
 header {
-  background-image: ('FKBUILDING.jpg');
+  background-image: url ('images/download.png');
   padding: 30px;
   text-align: center;
   font-size: 35px;
