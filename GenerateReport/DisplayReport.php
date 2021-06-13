@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
-<nav><?php include '../styles/sidebaradmin.php'?>FK Inventory System</nav>
+<nav><?php include '../styles/sidebartreasurer.php'?>FK Inventory System</nav> 
   <center>
     <h1><b>Report List</b></h1>
         <table style="border: 3px solid maroon;margin:10px;padding:50px; width:60%;">
