@@ -57,5 +57,4 @@ if (isset($_POST['new_password'])) {
       $results = mysqli_query($db, $sql);
       header('location: login2.php');
     }
-  } ?>
-}
+  } 
