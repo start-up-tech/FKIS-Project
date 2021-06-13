@@ -6,13 +6,30 @@
   </head>
 
   <body>
-    <div class="header">
+  <div class="header">
       <div class="title" id="title"> </div>
-      <h1 style="text-align: center;"> Make a booking</h1>
+      <nav><?php include '../styles/sidebarstaff.php'?>FK Inventory System</nav>
     </div>
-
+    <table>
+    <tr>
+    <th><a href="reqbooking.php" class="button">Book now</a> </th>
+    <th>
+    <form action="cancelbooking.php" method="post">
+        <br>
+      <label style="border-radius: 8px;
+      font-size: 16px; background-color: maroon;
+      border: none; color: white; padding: 15px 32px;
+      text-align: center; text-decoration: none; display: inline-block;
+      margin: 4px 2px;">Staff ID to Cancel Booking:</label><br>
+      <input type="text" id="Staff_ID" name="Staff_ID">
+      <input type="submit" value="Submit">
+        </form>
+    </th>
+    </tr>
+    </table>
          <h2>Items</h2>
          
+
   <div class="gallery">
     <a target="_blank" href="printer.png">
       <img src="printer.png" alt="Printer" width="300" height="200">
@@ -76,22 +93,6 @@
         </a>
         <div class="desc">Two holes paper puncher</div>
     </div><br>
-    <table>
-    <tr>
-    <th><a href="reqbooking.php" class="button">Book now</a> </th>
-    <th>
-    <form action="cancelbooking.php" method="post">
-        <br>
-      <label style="border-radius: 8px;
-      font-size: 16px; background-color: maroon;
-      border: none; color: white; padding: 15px 32px;
-      text-align: center; text-decoration: none; display: inline-block;
-      margin: 4px 2px;">Staff ID to Cancel Booking:</label><br>
-      <input type="text" id="Staff_ID" name="Staff_ID">
-      <input type="submit" value="Submit">
-        </form>
-    </th>
-    </tr>
-    </table>
+   
  </body>
 </html>

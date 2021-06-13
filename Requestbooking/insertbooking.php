@@ -4,7 +4,7 @@
     extract( $_POST );
 	 
 	
-	$query = "INSERT INTO booking (Staff_ID, Item_code, Item_Quantity, Requestdate) VALUES('$Staff_ID', '$item', '$qty', '$Requestdate')";
+	$query = "INSERT INTO booking (Staff_ID, Item_code, Item_Quantity, Collection_date) VALUES('$Staff_ID', '$item', '$qty', '$Collection_date')";
 		
 		if (mysqli_query($conn, $query)) {
 		echo "<script type='text/javascript'> window.location='viewitem.php' </script>";

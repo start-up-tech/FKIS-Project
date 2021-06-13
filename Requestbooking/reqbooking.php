@@ -10,13 +10,7 @@
       <div class="title" id="title"> </div>
       <nav><?php include '../styles/sidebarstaff.php'?>FK Inventory System</nav>
     </div>
-<<<<<<< Updated upstream
          <h2>MAKE A BOOKING</h2>
-=======
-         <h2>BOOKING</h2>
-       
->>>>>>> Stashed changes
-
        <div class="detail">
         <form action="insertbooking.php" method="post">
            <table>
@@ -45,8 +39,8 @@
                         <input type="number" id="qty" name="qty"><br>  
                     </th> 
                     <th>
-                        <label for="Requestdate">Request Date:</label><br>
-                        <input type="date" id="Requestdate" name="Requestdate">
+                        <label for="Collection_date">Collect Date:</label><br>
+                        <input type="date" id="Collection_date" name="Collection_date">
                     </th>
                  </tr>
            </table>
