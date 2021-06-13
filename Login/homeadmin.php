@@ -11,7 +11,6 @@
    <nav><?php include '../styles/sidebaradmin.php'?>FK Inventory System</nav>
 
    </head>
-<body>
 
 <h2>CSS Layout Float</h2>
 <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
