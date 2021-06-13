@@ -39,8 +39,8 @@
                         <input type="number" id="qty" name="qty"><br>  
                     </th> 
                     <th>
-                        <label for="Requestdate">Request Date:</label><br>
-                        <input type="date" id="Requestdate" name="Requestdate">
+                        <label for="collection_date">Collect Date:</label><br>
+                        <input type="date" id="collection_date" name="collection_date">
                     </th>
                  </tr>
            </table>
