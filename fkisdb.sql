@@ -96,8 +96,12 @@ CREATE TABLE `login` (
 
 INSERT INTO `login` (`Username`, `Password`, `level`, `email`, `Admin_ID`, `Staff_ID`, `Treasurer_ID`) VALUES
 ('Admin1234', 'admin123', 'admin', 'ayunibaiduri07@gmail.com', 'CB19087', '', ''),
-('Staff1234', 'Staff123', 'staff', 'AfikahAlias45@gmail.com\r\n', '', 'ST19086', ''),
-('Treasurer1', 'treasure123', 'treasurer', 'Abcde122@gmail.com', '', '', 'TS12345');
+('Staff1110', 'staff1110', 'staff', 'safwan@gmail.com', '', 'ST19010', ''),
+('Staff2220', 'staff2220', 'staff', 'darwish@gmail.com', '', 'ST19011', ''),
+('Staff3330', 'staff3330', 'staff', 'asmyra@gmail.com', '', 'ST19020', ''),
+('Staff4440', 'staff4440', 'staff', 'afikahashikin@gmail.com', '', 'ST19019', ''),
+('Staff5550', 'staff5550', 'staff', 'luqman@gmail.com\r\n', '', 'ST19086', ''),
+('Treasurer1', 'treasure123', 'treasurer', 'treasurerump2021@gmail.com', '', '', 'TS12345');
 
 -- --------------------------------------------------------
 
