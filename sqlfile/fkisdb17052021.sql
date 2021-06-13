@@ -93,7 +93,7 @@ CREATE TABLE `login` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `registration`
+-- Dumping data for table `login`
 --
 
 INSERT INTO `registration` (`Username`, `Password`, `level`, `email`, `Admin_ID`, `Staff_ID`, `Treasurer_ID`) VALUES
