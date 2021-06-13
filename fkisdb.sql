@@ -87,7 +87,7 @@ CREATE TABLE `login` (
   `email` varchar(20) NOT NULL,
   `Admin_ID` varchar(10) NOT NULL,
   `Staff_ID` varchar(10) NOT NULL,
-  `Treasurer_ID` varchar(10) NOT NULL
+  `Treasurer_ID` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
