@@ -11,9 +11,7 @@
       <h1 style="text-align: center;"> Make a booking</h1>
     </div>
 
-         <h2>BOOKING</h2>
-         
-  
+         <h2>Items</h2>
          
   <div class="gallery">
     <a target="_blank" href="printer.png">
@@ -28,6 +26,27 @@
         <img src="printer ink.jpg" alt="Printer ink" width="300" height="200">
         </a>
         <div class="desc">Printer ink (2 boxer, 1 black, 1 colour)</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="monitor.png">
+        <img src="monitor.png" alt="Monitor" width="300" height="200">
+        </a>
+        <div class="desc">Monitor</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="mouse.png">
+        <img src="mouse.png" alt="Mouse" width="300" height="200">
+        </a>
+        <div class="desc"> Wireless mouse</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="keyboard.jpg">
+        <img src="keyboard.jpg" alt="Keyboard" width="300" height="200">
+        </a>
+        <div class="desc">Keyboard</div>
     </div>
     
     <div class="gallery">
@@ -57,15 +76,22 @@
         </a>
         <div class="desc">Two holes paper puncher</div>
     </div><br>
-    <a href="reqbooking.php" class="button">Book now</a> 
-  <br>
-    <div class="Cancel">
-        <form action="cancelbooking.php" method="post">
+    <table>
+    <tr>
+    <th><a href="reqbooking.php" class="button">Book now</a> </th>
+    <th>
+    <form action="cancelbooking.php" method="post">
         <br>
-        <label>Enter Staff ID to cancel:</label><br>
-            <input type="text" id="Staff_ID" name="Staff_ID">
+      <label style="border-radius: 8px;
+      font-size: 16px; background-color: maroon;
+      border: none; color: white; padding: 15px 32px;
+      text-align: center; text-decoration: none; display: inline-block;
+      margin: 4px 2px;">Staff ID to Cancel Booking:</label><br>
+      <input type="text" id="Staff_ID" name="Staff_ID">
+      <input type="submit" value="Submit">
         </form>
-        <a href="cancelbooking.php" class="button">Cancel Booking</a> 
-    </div>
+    </th>
+    </tr>
+    </table>
  </body>
 </html>

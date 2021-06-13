@@ -44,7 +44,9 @@ CREATE TABLE `booking` (
   `Booking_ID` varchar(10) NOT NULL,
   `Staff_ID` varchar(10) NOT NULL,
   `Item_Code` varchar(20) NOT NULL,
-  `Item_Quantity` int(100) NOT NULL
+  `Item_Quantity` int(100) NOT NULL,
+  `Requestdate` date NOT NULL,
+  `Collection_status` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
