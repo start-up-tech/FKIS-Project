@@ -45,22 +45,8 @@ CREATE TABLE `booking` (
   `Staff_ID` varchar(10) NOT NULL,
   `Item_Code` varchar(20) NOT NULL,
   `Item_Quantity` int(100) NOT NULL,
-  `Requestdate` date NOT NULL,
+  `Collection_date` date NOT NULL,
   `Collection_status` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `booking_conformation`
---
-
-CREATE TABLE `booking_conformation` (
-  `Approved_Booking` varchar(10) NOT NULL,
-  `Collection_Date` date NOT NULL,
-  `Booking_ID` varchar(10) NOT NULL,
-  `Rejected_Booking` varchar(10) NOT NULL,
-  `Reject` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -193,13 +179,6 @@ ALTER TABLE `admin`
 ALTER TABLE `booking`
   ADD PRIMARY KEY (`Booking_ID`),
   ADD KEY `Staff_ID` (`Staff_ID`);
-
---
--- Indexes for table `booking_conformation`
---
-ALTER TABLE `booking_conformation`
-  ADD PRIMARY KEY (`Approved_Booking`),
-  ADD KEY `Booking_ID` (`Booking_ID`);
 
 --
 -- Indexes for table `new_order`
