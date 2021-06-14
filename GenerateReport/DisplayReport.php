@@ -22,7 +22,7 @@
             <thead>
                 <th colspan="5">Report ID</th>
                 <th colspan="5">Report Date</th>
-                <th colspan="5">Approved Booking</th>
+                <th colspan="5">Booking status</th>
                 <th colspan="5">Audit ID</th>
                 <th colspan="5">Order ID</th>
             </thead>
@@ -34,7 +34,7 @@
                     <tr style="text-align:center";>
                         <td colspan="5"><?php echo $row['Report_ID']?></td>
                         <td colspan="5"><?php echo $row['Report_Date']?></td>
-                        <td colspan="5"><?php echo $row['Approved_Booking']?></td>
+                        <td colspan="5"><?php echo $row['Booking_status']?></td>
                         <td colspan="5"><?php echo $row['Audit_ID']?></td>
                         <td colspan="5"><?php echo $row['Order_ID']?></td>
                     </tr>
