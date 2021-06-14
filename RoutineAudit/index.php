@@ -21,7 +21,7 @@
         <input type="text" name="search" id="" placeholder="Audit ID">
         <input type="submit" value="Search">
     </form>
-    <form id="newAudit" action="newAudit.php" method="POST">
+    <form id="newAudit" action="newAuditController.php" method="POST">
         New Audit <br>
         <input type="text"   placeholder="Audit ID" name="Audit_ID">  <br>
         <input type="text"   placeholder="User ID"  name="Admin_ID">  <br>
@@ -29,7 +29,7 @@
         <input type="number" placeholder="Quantity" name="Item_Quantity">  <br>
         <input type="submit" value="Submit">
     </form>
-    <form id="editAudit" action="editAudit.php" method="POST">
+    <form id="editAudit" action="editAuditController.php" method="POST">
         Edit Audit <br>
         <input type="text"   placeholder="Audit ID"  name="Audit_ID"  id="au">  <br>
         <input type="text"   placeholder="User ID"   name="Admin_ID"  id="ad"> <br>
