@@ -34,7 +34,8 @@ include("control.php"); ?>
 </b>
   
   <article>
-    <h1>About Us<h1>
+    <h1>About Us <br>
+    Admin Home Page<h1>
 <P>
 This system is for the use for Faculty of Computing staff to manage the inventory of the faculty.<br>
 This is the first version of FKIS System.<br><br><br><br><br><br>

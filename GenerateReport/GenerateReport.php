@@ -16,15 +16,11 @@
                 <table style="border: 3px solid maroon;margin:10px;padding:50px; width:auto;">
                     <tr>
                         <td><label for="Report_ID">Report ID:</label></td>
-                        <td colspan="5"><input type="text" name="Report_ID"/></td>
+                        <td colspan="5"><input type="text" name="Report_ID" required/></td>
                     </tr>
                     <tr>
                         <td><label for="Report_Date">Report Date:</label></td>
-                        <td colspan="5"><input type="date" name="Report_Date"/></td>
-                    </tr>
-                    <tr>
-                        <td><label for="Approved_Booking">Approved Booking:</label></td>
-                        <td colspan="5"><input type="text" name="Approved_Booking"/></td>
+                        <td colspan="5"><input type="date" name="Report_Date" required/></td>
                     </tr>
                     <tr>
                         <td><label for="Audit_ID">Audit ID:</label></td>

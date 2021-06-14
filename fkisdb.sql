@@ -31,7 +31,7 @@ CREATE TABLE `admin` (
   `Admin_ID` varchar(10) NOT NULL,
   `Name` varchar(30) NOT NULL,
   `Phone_Num` int(11) NOT NULL,
-  `Approved_Booking` varchar(10) NOT NULL
+  `Booking_status` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -41,12 +41,13 @@ CREATE TABLE `admin` (
 --
 
 CREATE TABLE `booking` (
-  `Booking_ID` varchar(10) NOT NULL,
+  `Booking_ID` int NOT NULL AUTO_INCREMENT,
   `Staff_ID` varchar(10) NOT NULL,
   `Item_Code` varchar(20) NOT NULL,
   `Item_Quantity` int(100) NOT NULL,
-  `Collection_date` date NOT NULL,
-  `Collection_status` varchar(100) NOT NULL
+  `Collection_Date` date NOT NULL,
+  `Booking_Status` varchar(100) NOT NULL,
+  PRIMARY KEY (Booking_ID)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -112,7 +113,7 @@ CREATE TABLE `recoverpassword` (
 CREATE TABLE `report` (
   `Report_ID` varchar(10) NOT NULL,
   `Report_Date` date NOT NULL,
-  `Approved_Booking` varchar(10) NOT NULL,
+  `Booking_status` varchar(10) NOT NULL,
   `Audit_ID` varchar(10) NOT NULL,
   `Order_ID` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -121,8 +122,8 @@ CREATE TABLE `report` (
 -- Dumping data for table `report`
 --
 
-INSERT INTO `report` (`Report_ID`, `Report_Date`, `Approved_Booking`, `Audit_ID`, `Order_ID`) VALUES
-('AS123', '2021-05-12', 'approve', 'RT545', 'DF3455');
+INSERT INTO `report` (`Report_ID`, `Report_Date`, `Booking_status`, `Audit_ID`, `Order_ID`) VALUES
+('AS123', '2021-05-12', 'Approved', 'RT545', 'DF3455');
 
 -- --------------------------------------------------------
 
@@ -137,6 +138,12 @@ CREATE TABLE `routine_audit` (
   `Item_Quantity` int(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+INSERT INTO `routine_audit` (`Audit_ID`, `Admin_ID`, `Item_Code`, `Item_Quantity`) VALUES
+('125896325', 'Admin1234', '1258963254', 10),
+('145236856', 'Admin1234', '7896582589', 10),
+('145632789', 'Admin1234', '7421589632', 10),
+('147845875', 'Admin1234', '1478458523', 10),
+('745896325', 'Admin1234', '1478536985', 10);
 -- --------------------------------------------------------
 
 --
@@ -171,13 +178,13 @@ CREATE TABLE `umpstaff` (
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`Admin_ID`),
-  ADD KEY `Approved_Booking` (`Approved_Booking`);
+  ADD KEY `Booking_status` (`Booking_status`);
 
 --
 -- Indexes for table `booking`
 --
-ALTER TABLE `booking`
-  ADD PRIMARY KEY (`Booking_ID`),
+ALTER TABLE `booking` 
+  AUTO_INCREMENT=100,
   ADD KEY `Staff_ID` (`Staff_ID`);
 
 --
@@ -192,7 +199,7 @@ ALTER TABLE `new_order`
 --
 ALTER TABLE `report`
   ADD PRIMARY KEY (`Report_ID`),
-  ADD KEY `Approved_Booking` (`Approved_Booking`),
+  ADD KEY `Booking_status` (`Booking_status`),
   ADD KEY `Audit_ID` (`Audit_ID`),
   ADD KEY `Order_ID` (`Order_ID`);
 
