@@ -14,7 +14,7 @@
     <tr>
     <th><a href="reqbooking.php" class="button">Book now</a> </th>
     <th>
-    <form action="cancelbooking.php" method="post">
+    <form action="CancelBookingController.php" method="post">
         <br>
       <label style="border-radius: 8px;
       font-size: 16px; background-color: maroon;
