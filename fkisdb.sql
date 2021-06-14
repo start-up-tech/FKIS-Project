@@ -41,12 +41,13 @@ CREATE TABLE `admin` (
 --
 
 CREATE TABLE `booking` (
-  `Booking_ID` varchar(10) NOT NULL,
+  `Booking_ID` int NOT NULL AUTO_INCREMENT,
   `Staff_ID` varchar(10) NOT NULL,
   `Item_Code` varchar(20) NOT NULL,
   `Item_Quantity` int(100) NOT NULL,
   `Collection_date` date NOT NULL,
-  `Booking_status` varchar(100) NOT NULL
+  `Booking_status` varchar(100) NOT NULL,
+  PRIMARY KEY (Booking_ID)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -182,8 +183,8 @@ ALTER TABLE `admin`
 --
 -- Indexes for table `booking`
 --
-ALTER TABLE `booking`
-  ADD PRIMARY KEY (`Booking_ID`),
+ALTER TABLE `booking` 
+  AUTO_INCREMENT=100,
   ADD KEY `Staff_ID` (`Staff_ID`);
 
 --
