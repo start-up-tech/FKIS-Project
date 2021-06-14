@@ -55,7 +55,7 @@ body {
   <a href="/FKIS-Project/ApproveBooking/ViewBookingInterface.php">Approve Booking</a>
   <a href="/FKIS-Project/InformNewOrder/view.php">Inform New Order</a>
   <a href="/FKIS-Project/RoutineAudit/">Routine Audit</a>
-  <a href="/FKIS-Project/GenerateReport/GenerateReport.php">Generate Report</a>
+  <a href="/FKIS-Project/GenerateReport/GenerateReportInterface.php">Generate Report</a>
   <a href="/FKIS-Project/Login/logout.php">Logout</a>
 </div>
 

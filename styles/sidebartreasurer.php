@@ -52,7 +52,7 @@ body {
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="/FKIS-Project/Login/hometreasurer.php">Home</a>
-  <a href="/FKIS-Project/GenerateReport/DisplayReport.php">Report</a>
+  <a href="/FKIS-Project/GenerateReport/DisplayReportInterface.php">Report</a>
   <a href="/FKIS-Project/Login/logout.php">Logout</a>
 </div>
 

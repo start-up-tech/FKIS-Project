@@ -49,7 +49,7 @@
                 </tr>
  
             </table><br>
-              <br><button onclick="location.href='GenerateReport.php'">Add Report</button><button onclick="location.href='DisplayReport.php'">Display Report</button><br><br>
+              <br><button onclick="location.href='GenerateReportInterface.php'">Add Report</button><button onclick="location.href='DisplayReportInterface.php'">Display Report</button><br><br>
             <?php
             if($result) {
                 echo '<script language="javascript">';
