@@ -15,12 +15,12 @@
             <form action="" method="post">
                 <table style="width:30%; border: 3px solid maroon;" border="1">
                     <tr>
-                        <th>Enter Order ID to delete</th>
+                        <th colspan="3">Enter Order ID to delete</th>
                     </tr>
                     <tr>
                         <td><label for="Order_ID">Order ID:</label></td>
-                        <td colspan="5"><input type="text" name="Order_ID"/></td>
-                        <td colspan="5"><input type="submit" name="delete" value="Delete ID" /></td>
+                        <td><input type="text" name="Order_ID"/></td>
+                        <td><input type="submit" name="delete" value="Delete ID" /></td>
                     </tr>
                 </table>
             </form>

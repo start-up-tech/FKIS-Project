@@ -13,7 +13,7 @@
     <h1><b>Inform New Order</b></h1>
         <div>
             <form action="OrderController.php" method="post">
-                <table style="width:30%; border: 3px solid maroon;" border="1">
+                <table style="border: 3px solid maroon;margin:10px;padding:50px; width:auto;">
                     <tr>
                         <td><label for="Order_ID">Order ID:</label></td>
                         <td colspan="5"><input type="text" name="Order_ID"/></td>

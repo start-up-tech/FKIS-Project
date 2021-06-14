@@ -18,7 +18,7 @@
 <nav><?php include '../styles/sidebaradmin.php'?>FK Inventory System</nav>
   <center>
     <h1><b>Order List</b></h1>
-        <table style="width:30%; border: 3px solid maroon;" border="1">
+        <table style="border: 3px solid maroon;margin:10px;padding:50px; width:60%;">
             <thead>
                 <th colspan="5">Order ID</th>
                 <th colspan="5">Admin ID</th>
