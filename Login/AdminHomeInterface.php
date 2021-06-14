@@ -36,7 +36,7 @@ include("control.php"); ?>
   <article>
     <h1>About Us <br>
     Admin Home Page<h1>
-<P>
+<p>
 This system is for the use for Faculty of Computing staff to manage the inventory of the faculty.<br>
 This is the first version of FKIS System.<br><br><br><br><br><br>
 <div  class="date" id="currDateTime"> </div>
