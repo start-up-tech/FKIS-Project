@@ -1,10 +1,10 @@
 function updateGood() {
-document.goodsform.action = "approve.php";
+document.goodsform.action = "ApproveController.php";
 document.goodsform.submit();
 }
 function deleteGood() {
 if(confirm("Confirm to reject?")) {
-document.goodsform.action = "reject.php";
+document.goodsform.action = "RejectController.php";
 document.goodsform.submit();
 }
 }
