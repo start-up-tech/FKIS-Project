@@ -35,7 +35,7 @@
                     <tr style="text-align:center";>
                         <td colspan="5"><?php echo $row['Booking_ID']?></td>
 						<td colspan="5"><?php echo $row['Staff_ID']?></td>
-						<td colspan="5"><?php echo $row['Collection_Date']?></td>
+						<td colspan="5"><?php echo $row['Collection_date']?></td>
 						<td colspan="5"><?php echo $row['Booking_Status']?></td>
 						
                 <?php
