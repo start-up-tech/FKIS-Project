@@ -137,6 +137,12 @@ CREATE TABLE `routine_audit` (
   `Item_Quantity` int(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+INSERT INTO `routine_audit` (`Audit_ID`, `Admin_ID`, `Item_Code`, `Item_Quantity`) VALUES
+('125896325', 'Staff2220', '1258963254', 10),
+('145236856', 'Staff2220', '7896582589', 10),
+('145632789', 'Staff2220', '7421589632', 10),
+('147845875', 'Staff2220', '1478458523', 10),
+('745896325', 'Staff2220', '1478536985', 10);
 -- --------------------------------------------------------
 
 --
