@@ -12,7 +12,7 @@
     </div>
          <h2>MAKE A BOOKING</h2>
        <div class="detail">
-        <form action="insertbooking.php" method="post">
+        <form action="BookingController.php" method="post">
            <table>
                <tr>
                    <th>

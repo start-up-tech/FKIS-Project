@@ -46,23 +46,19 @@
         <table style="border: 3px solid maroon;margin:10px;padding:50px; width:60%;">
             <thead>
                 <th colspan="5">Booking ID</th>
-                <th colspan="5">Staff ID</th>
                 <th colspan="5">Item Code</th>
                 <th colspan="5">Item Quantity</th>
-                <th colspan="5">Collection Date</th>
             </thead>
             <tbody>
                 <?php
-		              $q_booking = $link->query("SELECT * FROM `booking`") or die($link->error);
+		              $q_booking = $link->query("SELECT * FROM `booking` WHERE Booking_Status='Approved'") or die($link->error);
                       while($fetch_booking = $q_booking->fetch_array()){
                 ?>
      
                     <tr style="text-align:center";>
                         <td colspan="5"><?php echo $fetch_booking['Booking_ID']?></td>
-                        <td colspan="5"><?php echo $fetch_booking['Staff_ID']?></td>
                         <td colspan="5"><?php echo $fetch_booking['Item_Code']?></td>
                         <td colspan="5"><?php echo $fetch_booking['Item_Quantity']?></td>
-                        <td colspan="5"><?php echo $fetch_booking['Collection_Date']?></td>
                     </tr>
                 <?php
                     }
