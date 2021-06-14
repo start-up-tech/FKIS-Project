@@ -113,17 +113,9 @@ CREATE TABLE `recoverpassword` (
 CREATE TABLE `report` (
   `Report_ID` varchar(10) NOT NULL,
   `Report_Date` date NOT NULL,
-  `Booking_status` varchar(10) NOT NULL,
   `Audit_ID` varchar(10) NOT NULL,
   `Order_ID` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `report`
---
-
-INSERT INTO `report` (`Report_ID`, `Report_Date`, `Booking_status`, `Audit_ID`, `Order_ID`) VALUES
-('AS123', '2021-05-12', 'Approved', 'RT545', 'DF3455');
 
 -- --------------------------------------------------------
 
@@ -199,7 +191,6 @@ ALTER TABLE `new_order`
 --
 ALTER TABLE `report`
   ADD PRIMARY KEY (`Report_ID`),
-  ADD KEY `Booking_status` (`Booking_status`),
   ADD KEY `Audit_ID` (`Audit_ID`),
   ADD KEY `Order_ID` (`Order_ID`);
 
