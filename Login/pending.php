@@ -1,4 +1,4 @@
-<?php include('recoverlogic.php'); ?>
+<?php include('RecoverController.php'); ?>
 
 <html lang="en">
 <head>
@@ -14,6 +14,6 @@
 		</p>
 	    <p>Please login into your email account and click on the link we sent to reset your password</p>
 	</form>
-	<p><center><p><a href="login2.php">BACK TO LOGIN PAGE</a></</center></p>	
+	<p><center><p><a href="AccLoginInterface.php">BACK TO LOGIN PAGE</a></</center></p>	
 </body>
 </html>

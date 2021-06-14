@@ -17,7 +17,7 @@
 	?>
 	
 	
-		<form action="check.php" method="post">
+		<form action="LoginController.php" method="post">
 			
 			
 			<br>
@@ -43,7 +43,7 @@
 			
 			
 		</form>
-		<p><a href="recoverpassword.php">Forgot Password</a></p>
+		<p><a href="RecoveryInterface.php">Forgot Password</a></p>
 </center>
  
 </body>
