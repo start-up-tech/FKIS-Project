@@ -23,8 +23,13 @@
                         <td colspan="5"><input type="date" name="Report_Date" required/></td>
                     </tr>
                     <tr>
+<<<<<<< HEAD
                         <td><label for="Approved_Booking">Approved Booking:</label></td>
                         <td colspan="5"><input type="text" name="Approved_Booking" required/></td>
+=======
+                        <td><label for="Booking_status">Approved Booking:</label></td>
+                        <td colspan="5"><input type="text" name="Booking_status"/></td>
+>>>>>>> a625901adde2a0ab3912f41c3c0dfd58e5d843f1
                     </tr>
                     <tr>
                         <td><label for="Audit_ID">Audit ID:</label></td>
