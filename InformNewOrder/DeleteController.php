@@ -13,7 +13,7 @@
     <h1><b>Delete Order</b></h1>
         <div>
             <form action="" method="post">
-                <table style="border: 5px solid black;margin:20px;padding:100px; width:auto; background-color: #33C0FF;">
+                <table style="width:30%; border: 3px solid maroon;" border="1">
                     <tr>
                         <th>Enter Order ID to delete</th>
                     </tr>
