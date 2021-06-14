@@ -5,13 +5,13 @@
     
     $Report_ID = $_POST['Report_ID'];
     $Report_Date = $_POST['Report_Date'];
-    $Approved_Booking = $_POST['Approved_Booking'];
+    $Approved_Booking = $_POST['Booking_status'];
     $Audit_ID = $_POST['Audit_ID'];
     $Order_ID = $_POST['Order_ID'];
 
 
 
-    $query = "insert into `report` values('$Report_ID', '$Report_Date', '$Approved_Booking', '$Audit_ID' , '$Order_ID')" or die(mysqli_error());
+    $query = "insert into `report` values('$Report_ID', '$Report_Date', '$Booking_status', '$Audit_ID' , '$Order_ID')" or die(mysqli_error());
     $result = mysqli_query($link, $query);
 
 ?>
@@ -41,8 +41,8 @@
                     <td colspan="5"><?php echo $Report_Date ?></td>
                 </tr>
                 <tr>
-                    <td><label for="Approved_Booking">Approved Booking:</label></td>
-                    <td colspan="5"><?php echo $Approved_Booking ?></td>
+                    <td><label for="Booking_status">Booking_status:</label></td>
+                    <td colspan="5"><?php echo $Booking_status ?></td>
                 </tr>
                 <tr>
                     <td><label for="Audit_ID">Audit ID:</label></td>
