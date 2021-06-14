@@ -10,9 +10,8 @@
 
 	<form class="login-form" action="login2.php" method="post" style="text-align: center;">
 		<p>
-			We sent an email to  <b><?php echo $_GET['email'] ?></b> to help you recover your account. 
+			We sent a token as temporary password to <b><?php echo $_GET['email'] ?></b> to help you recover your account. 
 		</p>
-	    <p>Please login into your email account and click on the link we sent to reset your password</p>
 	</form>
 	<p><center><p><a href="AccLoginInterface.php">BACK TO LOGIN PAGE</a></</center></p>	
 </body>
