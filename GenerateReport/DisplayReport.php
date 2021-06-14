@@ -22,21 +22,19 @@
             <thead>
                 <th colspan="5">Report ID</th>
                 <th colspan="5">Report Date</th>
-                <th colspan="5">Booking status</th>
                 <th colspan="5">Audit ID</th>
                 <th colspan="5">Order ID</th>
             </thead>
             <tbody>
                 <?php
-                    while ($row=mysqli_fetch_array($rs_display)){
+                    while ($fetch_booking=mysqli_fetch_array($rs_display)){
                 ?>
      
                     <tr style="text-align:center";>
-                        <td colspan="5"><?php echo $row['Report_ID']?></td>
-                        <td colspan="5"><?php echo $row['Report_Date']?></td>
-                        <td colspan="5"><?php echo $row['Booking_status']?></td>
-                        <td colspan="5"><?php echo $row['Audit_ID']?></td>
-                        <td colspan="5"><?php echo $row['Order_ID']?></td>
+                        <td colspan="5"><?php echo $fetch_booking['Report_ID']?></td>
+                        <td colspan="5"><?php echo $fetch_booking['Report_Date']?></td>
+                        <td colspan="5"><?php echo $fetch_booking['Audit_ID']?></td>
+                        <td colspan="5"><?php echo $fetch_booking['Order_ID']?></td>
                     </tr>
                 <?php
                     }
@@ -44,6 +42,33 @@
             </tbody>
         </table>
         <br>
+        <h1><b>Approved Booking List</b></h1>
+        <table style="border: 3px solid maroon;margin:10px;padding:50px; width:60%;">
+            <thead>
+                <th colspan="5">Booking ID</th>
+                <th colspan="5">Staff ID</th>
+                <th colspan="5">Item Code</th>
+                <th colspan="5">Item Quantity</th>
+                <th colspan="5">Collection Date</th>
+            </thead>
+            <tbody>
+                <?php
+		              $q_booking = $link->query("SELECT * FROM `booking`") or die($link->error);
+                      while($fetch_booking = $q_booking->fetch_array()){
+                ?>
+     
+                    <tr style="text-align:center";>
+                        <td colspan="5"><?php echo $fetch_booking['Booking_ID']?></td>
+                        <td colspan="5"><?php echo $fetch_booking['Staff_ID']?></td>
+                        <td colspan="5"><?php echo $fetch_booking['Item_Code']?></td>
+                        <td colspan="5"><?php echo $fetch_booking['Item_Quantity']?></td>
+                        <td colspan="5"><?php echo $fetch_booking['Collection_Date']?></td>
+                    </tr>
+                <?php
+                    }
+                ?>
+            </tbody>
+        </table>
     </center>
 </body>
 </html>
