@@ -3,6 +3,7 @@ var theID;
 var theSearch;
 var theNew;
 var theEdit;
+var theTitle = document.getElementsByTagName("title")[0];
             
 window.onload = function(){
     loadPage();
@@ -22,9 +23,11 @@ function openDiv(theId){
     switch(theID){
         case 'panelSearch':
             var y = theNew;
+            theTitle.innerHTML = "Search";
             break;
         case 'newAudit':
             var y = theSearch;
+            theTitle.innerHTML = "New Audit";
             break;
         default :
             break;

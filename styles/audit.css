@@ -1,0 +1,23 @@
+input[type=text]{
+    width: 300px;
+    height: 30px;
+}
+input[type=number]{
+    height: 30px;
+    width: 100px;
+}
+input[type=submit]{
+    background-color: maroon;
+    color: #FFFFFF;
+    height:30px;
+}
+button{
+    background-color: maroon;
+    color: #FFFFFF;
+    height:30px;
+}
+form{
+    background-color: #f7f7f7;
+    display: flex;  
+    flex-wrap: wrap;
+}

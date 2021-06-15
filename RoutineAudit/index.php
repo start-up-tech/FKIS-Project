@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audit</title>
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/audit.css">
 </head>
 <body>
     <?php include 'connect.php';?>
@@ -22,7 +23,7 @@
         <input type="submit" value="Search">
     </form>
     <form id="newAudit" action="newAuditController.php" method="POST">
-        New Audit <br>
+        <h3>New Audit</h3> <br>
         <input type="text"   placeholder="Audit ID" name="Audit_ID">  <br>
         <input type="text"   placeholder="User ID"  name="Admin_ID">  <br>
         <input type="text"   placeholder="Item Code"  name="Item_Code"> <br>
@@ -40,13 +41,14 @@
             if($count == 0){
                 $output = 'No search result';
             }else{
-                print '<table id="theTable" 
-                        style="margin-left:auto;
-                        margin-right:auto; 
-                        border-left: 5px #C0C0C0 solid;
-                        border-right: 5px #C0C0C0 solid;
-                        border-bottom: 5px #C0C0C0 solid;
-                        background-color:#F2F2F2;">';
+                print '<div> <h3>Search results</h3>
+                        <table id="theTable" 
+                            style="margin-left:auto;
+                            margin-right:auto; 
+                            border-left: 5px #f7f7f7 solid;
+                            border-right: 5px #f7f7f7 solid;
+                            border-bottom: 5px #f7f7f7 solid;
+                            background-color:#F2F2F2;">';
                 print '<tr> <th>Audit ID</th> <th>Admin ID</th> <th>Item Code</th> <th>Quantity</th> </tr>';
                 while($row = mysqli_fetch_array($query)){
                     $auditid = $row['Audit_ID'];
@@ -70,23 +72,24 @@
                             onClick="editAudit('.$auditid.')">Edit</button></td>
                         </tr>';
                 }
-                print '</table>';
+                print '</table></div>';
             }
         }
     ?>
-     <form id="editAudit" action="editAuditController.php" method="POST">
+    <form id="editAudit" action="editAuditController.php" method="POST">
         <script>
             function editAudit(theAudit)
             {
                 theEdit.style.display = "block";
                 theTable.style.display = "none";
-                document.getElementById("au").innerHTML = theAudit;
+                document.getElementById("au").innerHTML = "<h3>Edit Audit</h3> <br>Audit ID:"+theAudit;
                 document.getElementById("aud").value = theAudit;
+                document.title = "Edit Audit";
             
             }
         </script>
-        Edit Audit: <p id="au"></p><br>
-        Admin ID: <p id="ad"></p> <br>
+        <p id="au"></p>
+        <p>note: only input the value that you wish to edit </p>
         <input type = "hidden" id="aud" name = "Audit_ID"/>
         <input type="text"   placeholder="Admin ID"  name="Admin_ID"> <br>
         <input type="text"   placeholder="Item Code" name="Item_Code"> <br>
