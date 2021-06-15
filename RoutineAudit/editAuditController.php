@@ -5,31 +5,34 @@
     $itemcode = $_POST['Item_Code'];
     $itemqty = $_POST['Item_Quantity'];
     
-    if(empty($auditid)){
-        echo('<script>alert("AUDIT ID REQUIRED")</script>');
-        echo('<script>window.location.href = "index.php";</script>');
-    }else{$au = $auditid;}
-       
-    if(empty($adminid))
+    if(empty($adminid)==false)
     {
-        echo('<script>alert("ADMIN ID REQUIRED")</script>');
-        echo('<script>window.location.href = "index.php";</script>');
-    }else{$ad = $adminid;}
+        $ad = $adminid;
+        $q = "UPDATE routine_audit SET Admin_ID='$ad' WHERE Audit_ID='$auditid'";
+        if(mysqli_query($con, $q)){
+            echo('<script>alert("Audit updated successfully")</script>');
+            echo('<script>window.location.href = "index.php";</script>');
+        } else {
+            echo "ERROR: Could not able to execute $q. " . mysqli_error($con);
+        }
+    }
     
-    if(empty($itemcode))
+    if(empty($itemcode)==false)
     {
-        echo('<script>alert("ITEM aCODE REQUIRED")</script>');
-        echo('<script>window.location.href = "index.php";</script>');
-    }else{$ic = $itemcode;}
+        $ic = $itemcode;
+        $q = "UPDATE routine_audit SET Item_Code='$ic' WHERE Audit_ID='$auditid'";
+        if(mysqli_query($con, $q)){
+            echo('<script>alert("Audit updated successfully")</script>');
+            echo('<script>window.location.href = "index.php";</script>');
+        } else {
+            echo "ERROR: Could not able to execute $q. " . mysqli_error($con);
+        }
+    }
 
-    if(empty($itemqty))
+    if(empty($itemqty)==false)
     {
-        echo('<script>alert("ITEM QUANTITY REQUIRED")</script>');
-        echo('<script>window.location.href = "index.php";</script>');
-    }else{$iq = $itemqty;}
-
-    if(count(array_filter($_POST))==count($_POST)){
-        $q = "UPDATE routine_audit SET Audit_ID='$au', Admin_ID='$ad',Item_Code='$ic',Item_Quantity='$iq' WHERE Audit_ID='$au'";
+        $iq = $itemqty;
+        $q = "UPDATE routine_audit SET Item_Quantity='$iq' WHERE Audit_ID LIKE '%$auditid%'";
         if(mysqli_query($con, $q)){
             echo('<script>alert("Audit updated successfully")</script>');
             echo('<script>window.location.href = "index.php";</script>');
