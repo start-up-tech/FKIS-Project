@@ -1,5 +1,5 @@
 <?php 
 
-header('location:Login/login2.php');
+header('location:Login/AccLoginInterface.php');
 
 ?>
