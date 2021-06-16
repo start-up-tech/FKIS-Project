@@ -1,0 +1,12 @@
+*Login Data*
+
+Admin(username) = Admin1234
+Admin(password) = admin123
+
+Staff(username) = Staff1110
+Staff(password) = staff1110
+
+Treasurer(username) = Treasurer1
+Treasurer(password) = treasure123
+
+*Recoverpasssword email* = ayunibaiduri07@gmail
